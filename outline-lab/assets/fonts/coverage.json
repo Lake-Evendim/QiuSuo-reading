@@ -1,0 +1,95 @@
+{
+  "Sans": {
+    "bytes": 223468,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A"
+    ]
+  },
+  "Serif": {
+    "bytes": 291800,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A"
+    ]
+  },
+  "Hei": {
+    "bytes": 312888,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A"
+    ]
+  },
+  "Round": {
+    "bytes": 431720,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A"
+    ]
+  },
+  "Condensed": {
+    "bytes": 243824,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A",
+      "U+2318"
+    ]
+  },
+  "Mono": {
+    "bytes": 102912,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A"
+    ]
+  },
+  "XiaoWei": {
+    "bytes": 225012,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A",
+      "U+00B7",
+      "U+2318"
+    ]
+  },
+  "Smiley": {
+    "bytes": 92036,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A",
+      "U+2318"
+    ]
+  },
+  "QingKe": {
+    "bytes": 154480,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A",
+      "U+00B7",
+      "U+2318"
+    ]
+  },
+  "Wide": {
+    "bytes": 212460,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A",
+      "U+2318"
+    ]
+  },
+  "Plex": {
+    "bytes": 139524,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A",
+      "U+2212",
+      "U+2318"
+    ]
+  },
+  "Sung": {
+    "bytes": 400468,
+    "chineseMissing": [],
+    "otherMissing": [
+      "U+000A"
+    ]
+  }
+}

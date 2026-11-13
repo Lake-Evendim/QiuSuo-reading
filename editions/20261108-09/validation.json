@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "articles": [
+    {
+      "id": "datawhale-higgs-20261109",
+      "title": "李沐：我带着新模型回来了！",
+      "account": "Datawhale",
+      "date": "2026-11-08",
+      "time": "23:25",
+      "briefCharacters": 293,
+      "bodyCharacters": 4316,
+      "images": 10,
+      "headings": 3,
+      "bodySha256": "f37236b7ea5cbca676daabff97d335a681631492cc091368c03b336597622283"
+    },
+    {
+      "id": "mlnlp-wsp-20261109",
+      "title": "GPT-6 Astra改权重爆火？我们做了一组对照实验，模型根本没变聪明",
+      "account": "MLNLP",
+      "date": "2026-11-09",
+      "time": "00:00",
+      "briefCharacters": 299,
+      "bodyCharacters": 4537,
+      "images": 6,
+      "headings": 9,
+      "bodySha256": "87bc7855cd81fcc506bc20f20c954ac1275f7b895e631e7df14f4f80f8d423f2"
+    },
+    {
+      "id": "latepost-huaxi-20261109",
+      "title": "华西医院的 AI 经验，如何成为更多医院的起点？",
+      "account": "晚点LatePost",
+      "date": "2026-11-08",
+      "time": "18:06",
+      "briefCharacters": 280,
+      "bodyCharacters": 5118,
+      "images": 4,
+      "headings": 3,
+      "bodySha256": "d0ae428410faba4c0074f9e4e66cfdd12a123fb22441dfac31c63d4e494187dc"
+    },
+    {
+      "id": "baai-real-20261109",
+      "title": "报名 | 11.24 以真实，丈量智能：智源REAL物理AI开放日",
+      "account": "智源社区",
+      "date": "2026-11-09",
+      "time": "14:47",
+      "briefCharacters": 314,
+      "bodyCharacters": 847,
+      "images": 3,
+      "headings": 2,
+      "bodySha256": "ca4572b3c76c922781af3287af46037da881531454652de78542f7b5f57157cc"
+    },
+    {
+      "id": "mlnlp-ppt-20261109",
+      "title": "Paper-Presentation-Tips更新：新增 AI 学术 PPT 生成与润色 Skill！",
+      "account": "MLNLP",
+      "date": "2026-11-09",
+      "time": "00:00",
+      "briefCharacters": 348,
+      "bodyCharacters": 2230,
+      "images": 6,
+      "headings": 6,
+      "bodySha256": "152f06dfdfd0c86d35faacc058494f14197464275b30f7d1d9a59d1245cb779b"
+    },
+    {
+      "id": "mlnlp-altman-20261109",
+      "title": "Sam Altman最新访谈：下一代 AI 的核心是智能体团队！",
+      "account": "MLNLP",
+      "date": "2026-11-09",
+      "time": "00:00",
+      "briefCharacters": 320,
+      "bodyCharacters": 3233,
+      "images": 5,
+      "headings": 6,
+      "bodySha256": "f3a0bc09249d6064a08b583a3cb9246bea5d265b38ea5b1a8f7fa169d8435e0e"
+    },
+    {
+      "id": "mlnlp-worldmodel-20261109",
+      "title": "资本正在撤离“世界模型”",
+      "account": "MLNLP",
+      "date": "2026-11-09",
+      "time": "00:00",
+      "briefCharacters": 303,
+      "bodyCharacters": 5079,
+      "images": 11,
+      "headings": 5,
+      "bodySha256": "06c620931bae8a60e9ef83faadb6213bb4a049f83f825290fbe29533026e0ac3"
+    },
+    {
+      "id": "mlnlp-account-20261109",
+      "title": "无预警！OpenAI 突然大规模封号",
+      "account": "MLNLP",
+      "date": "2026-11-08",
+      "time": "00:00",
+      "briefCharacters": 305,
+      "bodyCharacters": 2162,
+      "images": 18,
+      "headings": 3,
+      "bodySha256": "291026179797e5525a354c375cb54dd8f5a886e7b4e228b61b695781b3e5f063"
+    },
+    {
+      "id": "mlnlp-anthropic-20261109",
+      "title": "A\\三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间",
+      "account": "MLNLP",
+      "date": "2026-11-08",
+      "time": "00:00",
+      "briefCharacters": 340,
+      "bodyCharacters": 2675,
+      "images": 11,
+      "headings": 3,
+      "bodySha256": "60b10e7f2c49b04d0553004d77cf25b4e0eec93365aa08ab330e17486cc97e83"
+    },
+    {
+      "id": "mlnlp-rsi-20261109",
+      "title": "给硅谷泼冷水！李飞飞与Jeff Dean关于 RSI 的讨论会实录",
+      "account": "MLNLP",
+      "date": "2026-11-08",
+      "time": "00:00",
+      "briefCharacters": 315,
+      "bodyCharacters": 4269,
+      "images": 7,
+      "headings": 6,
+      "bodySha256": "b76f2375a6a420be3af8b2e8d1ac3cf1ef1147e14766ee75e9e8bcc152945275"
+    }
+  ],
+  "newArticles": 10,
+  "localImages": 81,
+  "bodyTextVerified": true,
+  "briefsWithin200To350": true,
+  "dateRangeVerified": true
+}

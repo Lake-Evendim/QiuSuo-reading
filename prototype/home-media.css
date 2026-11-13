@@ -1,0 +1,125 @@
+/* One centered measure for the complete digest, including metadata, copy and media. */
+html[data-scheme="journal"] .digest {
+  inline-size: 100%;
+  max-inline-size: 1120px;
+  margin-inline: auto;
+}
+
+/* Source and date tags remain in the existing left margin. */
+html[data-scheme="journal"] .article-heading .heading-takeaway {
+  margin: 20px 0 0;
+  max-width: none;
+}
+
+html[data-scheme="journal"] .digest .source-margin {
+  --source-tag-ink: #50534c;
+  --source-tag-bg: #f0f1ed;
+  --source-tag-border: #dde0d7;
+  --source-tag-hover: #e6e8e1;
+  min-inline-size: 0;
+  gap: 8px;
+  padding-block-start: 3px;
+}
+
+html[data-scheme="journal"] .digest .source-margin[data-source-group="工程实践"] {
+  --source-tag-ink: #626b50;
+  --source-tag-bg: #eff1e9;
+  --source-tag-border: #d9dfcf;
+  --source-tag-hover: #e5eadb;
+}
+
+html[data-scheme="journal"] .digest .source-margin[data-source-group="行业研究"] {
+  --source-tag-ink: #7b655d;
+  --source-tag-bg: #f3efeb;
+  --source-tag-border: #e4d9d2;
+  --source-tag-hover: #ebe3dc;
+}
+
+html[data-scheme="journal"] .digest .source-margin .account-name {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  max-inline-size: 100%;
+  min-block-size: 34px;
+  padding: 7px 8px;
+  border: 1px solid var(--source-tag-border);
+  border-radius: 10px;
+  background: var(--source-tag-bg);
+  color: var(--source-tag-ink);
+  font: 600 13px/1.5 var(--sans);
+  text-align: start;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+html[data-scheme="journal"] .digest .source-margin .account-name:hover {
+  background: var(--source-tag-hover);
+  color: #292a28;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+html[data-scheme="journal"] .digest .source-margin .account-name:focus-visible {
+  outline: 2px solid #292a28;
+  outline-offset: 3px;
+}
+
+html[data-scheme="journal"] .digest .source-margin time {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #f1f2ef;
+  color: #64685f;
+  font: 500 12px/1.5 var(--sans);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) and (min-width: 581px) {
+  html[data-scheme="journal"] .digest .source-margin .account-name {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 580px) {
+  html[data-scheme="journal"] .digest .source-margin {
+    gap: 8px;
+    padding-block-start: 0;
+  }
+}
+
+@media (pointer: coarse), (max-width: 580px) {
+  html[data-scheme="journal"] .digest .source-margin .account-name {
+    min-block-size: 44px;
+  }
+}
+
+@media (min-width: 801px) {
+  html[data-scheme="journal"] body:not(.site-focus) .digest .article-content {
+    inline-size: 100%;
+    max-inline-size: none;
+    max-width: none;
+  }
+
+  html[data-scheme="journal"] body:not(.site-focus) .digest .brief-text {
+    max-width: none;
+  }
+
+  html[data-scheme="journal"] body:not(.site-focus) .digest .featured-story:has(.edition-media) .article-content {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 24px;
+    align-items: start;
+  }
+
+  html[data-scheme="journal"] body:not(.site-focus) .digest .featured-story:has(.edition-media) .article-heading {
+    inline-size: 100%;
+    max-inline-size: 100%;
+  }
+
+  html[data-scheme="journal"] body:not(.site-focus) .digest .featured-story .edition-media {
+    inline-size: min(100%, 480px);
+    justify-self: center;
+  }
+}

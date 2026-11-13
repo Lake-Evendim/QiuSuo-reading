@@ -1,0 +1,14 @@
+{
+  "id": "20261113-briefs",
+  "revisedOn": "2026-11-13",
+  "rulesVersion": "2026-11-12",
+  "articleIds": [
+    "datawhale-higgs-20261109",
+    "mlnlp-wsp-20261109",
+    "mlnlp-rsi-20261109",
+    "mlnlp-ppt-20261109",
+    "latepost-huaxi-20261109"
+  ],
+  "path": "editions/20261108-09/revisions/20261113-briefs",
+  "reason": "用户采用五篇重写简报，原文日期与采集时间保持原口径"
+}

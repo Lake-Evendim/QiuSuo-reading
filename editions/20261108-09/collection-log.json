@@ -1,0 +1,428 @@
+{
+  "requestedRange": {
+    "from": "2026-11-08",
+    "to": "2026-11-09",
+    "timezone": "Asia/Shanghai"
+  },
+  "checkedAt": "2026-11-09T16:35:02.801746+08:00",
+  "accounts": [
+    {
+      "account": "大淘宝技术",
+      "entry": "https://www.jintiankansha.com/column/mNEFb2yY5Q?type=recent",
+      "collectedAt": "2026-11-09T16:22:18.294266+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "淘宝MNN团队开源0.3B手机模型，iPhone 18 Pro上离线跑出350 token/s",
+        "天猫国际 AI 智能建场 Agent 工程实践：从一句话到可投放的会场页面",
+        "让 AI 看得见、判得准、改得对—— D2C 从设计稿到三端真机达标的自动化实践",
+        "从 AI Friendly 架构到可复制的 AI 迁移能力 - 淘宝直播搜推在线架构升级实践",
+        "Taobao3D 拓扑生成算法开源！让高保真 3D 更轻量",
+        "天猫数字员工（效能篇）- 多角色场景下的 AI 研发流转效能分析",
+        "天猫数字员工（实践篇）- 接管全链路：交付能力与技术拆解",
+        "天猫数字员工（协作篇）- 研发的暗物质与 AI Native 组织协作"
+      ],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "腾讯技术工程",
+      "entry": "https://www.jintiankansha.com/column/MjRZLdlgU6?type=recent",
+      "collectedAt": "2026-11-09T16:22:17.797059+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "多Agent协作的下一场竞争，不在模型，而在上下文",
+        "可直接喂给 WorkBuddy 的实战模板 | 零基础构建策划团队 Skill",
+        "腾讯混元发布 Hy4，首次成为最强开源模型之一",
+        "从OpenClaw，怎么走到了Super Agent？",
+        "从直板到折叠屏：腾讯Kuikly如何适配 iPhone Duo？",
+        "腾讯TGR：以生成式范式重塑推荐系统",
+        "AI Infra进阶：3万字深入理解线性注意力机制",
+        "一句话生成看板｜灯塔AI数据分析从0到1完整指南"
+      ],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "美团技术团队",
+      "entry": "https://tech.meituan.com/history.html",
+      "collectedAt": "2026-11-09T16:22:17.858607+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "字节跳动技术团队",
+      "entry": "https://www.jintiankansha.com/column/UBGeF9WrAJ?type=recent",
+      "collectedAt": "2026-11-09T16:22:18.413260+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "每两家头部手机厂商就有一家选它：火山引擎如何成为 AI 手机助手的\"隐形底座\"？",
+        "OpenViking连接业务系统，LLM Wiki一键编译",
+        "让改进有迹可循：Storage Agent Family Eval 工程实践",
+        "个性化视频技术：历时七年的算法演进",
+        "以电商客服为例，看 AgentKit 技能评测如何让 Skill 敢上生产！",
+        "迎战双十一，如何让智能客服 Agent 经得起真实业务考验？",
+        "OpenViking 上线原生 3D 内容理解模型",
+        "一份旅行手册，豆包做完，IGA Pages 一句话就分享出去"
+      ],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "百度Geek说",
+      "entry": "https://juejin.cn/user/4186596000416094/posts",
+      "collectedAt": "2026-11-09T16:22:18.549088+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "千问AI平台",
+      "entry": "https://www.jintiankansha.com/column/BcFPzchKte?type=recent",
+      "collectedAt": "2026-11-09T16:22:17.705082+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "从LLM到Ontology：本体驱动的AI数据研发原理与最佳实践",
+        "阿里云启动“千问AI双11”，模型调用、AI应用、云底座同步推出优惠",
+        "从风险识别到验证闭环：高德营销AI质量工程实践",
+        "阿里云发布AI投研工作台Qovest，给专业投资者配一个“AI研究员”",
+        "Skill 路由优化实战：基于真实业务请求的 description 自进化",
+        "让Agent可评、可控、可迭代：业务效果导向的评测体系与场景实践",
+        "深度解析 Codex Harness 架构及其全新上下文压缩记忆体系的设计思路",
+        "从生态坐标到生产级长跑：AgentScope2.0运行时与最佳实践"
+      ],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "硅基流动",
+      "entry": "https://www.siliconflow.cn/news",
+      "collectedAt": "2026-11-09T16:22:18.790399+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "机器之心",
+      "entry": "https://www.jiqizhixin.com/",
+      "collectedAt": "2026-11-09T16:22:17.648545+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "官网入口返回数据服务页，具体文章页未取得可核验正文；保留待核验。"
+    },
+    {
+      "account": "PaperWeekly",
+      "entry": "https://www.jintiankansha.com/column/jHbUyPtsY3?type=recent",
+      "collectedAt": "2026-11-09T16:22:17.676502+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "不设限薪资+期权！V·STAR顶尖人才计划：我们在寻找，向往同一片海的人",
+        "扩散语言模型也能一步生成？Seq-Drifting提供一种可能",
+        "具身智能也需要Harness？港中文发布Agentic Robots综述",
+        "EMNLP 2026 | 多模态数学推理别急着“想”，UniCAR-RL让模型先看清",
+        "一段摘要生成6页论文，CVPR底稿写作最强Skill来了",
+        "Cortex为智能体打造「大脑皮层」，让经验沉淀为长期记忆",
+        "当paper通胀后，我们该怎么benchmark一个researcher？",
+        "EMNLP 2026 | 中科大提出AtomMem，用原子事实重建Agent长期记忆"
+      ],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "魔搭ModelScope社区",
+      "entry": "https://www.jintiankansha.com/column/79wGr0Rfs2?type=recent",
+      "collectedAt": "2026-11-09T16:22:17.794064+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "AI降临派开源 Sophon-Realtime v1：听得懂语气，也说得出语气的全双工语音模型",
+        "魔搭社区模型速递（11.1-11.7）",
+        "HAL-X开源THX-02：4.5B 多模态决策模型，按需思考，Decision Index 0.3...",
+        "从「资源可下载」到「Agent 可集成」：打造 Agentic 时代的开放生态基座",
+        "排行榜第一！中国团队开源的决策模型 KnowLine 登陆魔搭",
+        "月之暗面开放 Kimi K3.1 Pro 权重： 2.8T 参数，强化长程编程与 3D 创作",
+        "魔搭请你去 SEE Conf 2026，共赴一场创造力之约",
+        "Piccolo：递归自我进化的决策模型"
+      ],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "Datawhale",
+      "entry": "https://www.jintiankansha.com/column/hdKbpkn3mM?type=recent",
+      "collectedAt": "2026-11-09T16:22:17.800321+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "李沐：我带着新模型回来了！",
+        "整理了最新GPT-Images-2.6的全网10个爆火玩法！",
+        "Datawhale亮相世界互联网大会，发布全国首个 OPC 人才能力模型团体标准！",
+        "给硅谷泼冷水！李飞飞与Jeff Dean关于 RSI 的讨论会实录",
+        "Datawhale团队第十五期录取名单！",
+        "Sam Altman最新访谈：下一代 AI 的核心是智能体团队！",
+        "倒计时三天！COSCon'26 中国开源年会早鸟票来了",
+        "DeepSeek大肥鱼教程来了！养成你的第一只鲸鱼娘"
+      ],
+      "status": "collected-verified",
+      "added": 1,
+      "articles": [
+        {
+          "title": "李沐：我带着新模型回来了！",
+          "publishedAt": "2026-11-08T23:25:00+08:00",
+          "publisher": "Datawhale",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212624&ver=7077&signature=U3NUfPyFjckFTG6GdjLlI8-*gNgyfM5tmMWpp5jTbiOH*Tepg8U7PRzmw6GOtbeniKjZqEAWc7eCy86ZexP*ovuuH7exaYxdWdEl1EZHrV4UITB2DJ7PP-6K8riEi66W&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 4316
+        }
+      ],
+      "reason": null
+    },
+    {
+      "account": "MLNLP",
+      "entry": "https://www.jintiankansha.com/column/Ugdu7aDz2h?type=recent",
+      "collectedAt": "2026-11-09T16:22:18.495784+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "Sam Altman最新访谈：下一代 AI 的核心是智能体团队！",
+        "GPT-6 Astra改权重爆火？我们做了一组对照实验，模型根本没变聪明",
+        "Paper-Presentation-Tips更新：新增 AI 学术 PPT 生成与润色 Skill...",
+        "资本正在撤离“世界模型”",
+        "A\\三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间",
+        "RL 之外！从采样视角重新思考大模型推理优化",
+        "给硅谷泼冷水！李飞飞与Jeff Dean关于 RSI 的讨论会实录",
+        "无预警！OpenAI 突然大规模封号"
+      ],
+      "status": "collected-verified",
+      "added": 7,
+      "articles": [
+        {
+          "title": "GPT-6 Astra改权重爆火？我们做了一组对照实验，模型根本没变聪明",
+          "publishedAt": "2026-11-09T00:00:00+08:00",
+          "publisher": "机器学习算法与自然语言处理",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212653&ver=7077&signature=bpsmG3AKFe9qJl2n*gLiVQPJ2-74T2GKkqNN9xKeIPq5-DDkpQjb0di9rjTsKswWXj6o9SFjXeH*wnfpbBSkEAe4wwavC1tINUpxKigxoxvKzX-dsUzyM4asEouxXayA&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 4537
+        },
+        {
+          "title": "Paper-Presentation-Tips更新：新增 AI 学术 PPT 生成与润色 Skill！",
+          "publishedAt": "2026-11-09T00:00:00+08:00",
+          "publisher": "机器学习算法与自然语言处理",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212808&ver=7077&signature=bpsmG3AKFe9qJl2n*gLiVQPJ2-74T2GKkqNN9xKeIPp46Rp2ktfDvdjAgDXs6mjoKFLhmL4iItgHjAp*LGa*5VIwRjmC3AmUmxWXw1IQfn3nwuISMfEvUa0hhvigeRaJ&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 2230
+        },
+        {
+          "title": "Sam Altman最新访谈：下一代 AI 的核心是智能体团队！",
+          "publishedAt": "2026-11-09T00:00:00+08:00",
+          "publisher": "机器学习算法与自然语言处理",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212871&ver=7077&signature=bpsmG3AKFe9qJl2n*gLiVQPJ2-74T2GKkqNN9xKeIPre8m3GdSCy5zMWIX7yfhzJ7uxtLnJv5f-IEnrB7Qz2ps01lJOHTX-bLD6qx-SwZKOKAMKhLZrK6fo1J-LDhLIm&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 3233
+        },
+        {
+          "title": "资本正在撤离“世界模型”",
+          "publishedAt": "2026-11-09T00:00:00+08:00",
+          "publisher": "机器学习算法与自然语言处理",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212903&ver=7077&signature=bpsmG3AKFe9qJl2n*gLiVQPJ2-74T2GKkqNN9xKeIPrzTScloWz0whCo7UebW7h*VrZP7i2rxFo8qilf1lnw255tp**aQtbdQzkKg-tlaLWmw8gnDtbpY1ESJKOvO-zb&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 5079
+        },
+        {
+          "title": "无预警！OpenAI 突然大规模封号",
+          "publishedAt": "2026-11-08T00:00:00+08:00",
+          "publisher": "机器学习算法与自然语言处理",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212913&ver=7077&signature=bpsmG3AKFe9qJl2n*gLiVQPJ2-74T2GKkqNN9xKeIPo5SR5Bd2l6uk7-WiU7gXQZFVEbKCio4eGsXrieKp3hYHCCAA66b1uBWpFyDECwSq3PtYpoWcG5D98K1f1UK5WV&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 2162
+        },
+        {
+          "title": "A\\三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间",
+          "publishedAt": "2026-11-08T00:00:00+08:00",
+          "publisher": "机器学习算法与自然语言处理",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212926&ver=7077&signature=bpsmG3AKFe9qJl2n*gLiVQPJ2-74T2GKkqNN9xKeIProyt2HKAlbmlT-CaYGHtRuMm9gU49hzqq2QKNa90-ZXWUOeepIfia4Q1OIDqHJjXcCuap5g2-8Or3fkHmo*pUq&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 2675
+        },
+        {
+          "title": "给硅谷泼冷水！李飞飞与Jeff Dean关于 RSI 的讨论会实录",
+          "publishedAt": "2026-11-08T00:00:00+08:00",
+          "publisher": "机器学习算法与自然语言处理",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212941&ver=7077&signature=bpsmG3AKFe9qJl2n*gLiVQPJ2-74T2GKkqNN9xKeIPqMgLtM-ogppBZGbVOrqyGoK6EuLymYWb6y*pOCfsMz15356L8YWcpS83q52xU8XgfKIAVpzI4mxC1nQSVUqphM&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 4269
+        }
+      ],
+      "reason": null
+    },
+    {
+      "account": "智源社区",
+      "entry": "https://www.jintiankansha.com/column/G3UlXJoRgK?type=recent",
+      "collectedAt": "2026-11-09T16:22:18.523415+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "报名 | 11.24 以真实，丈量智能：智源REAL物理AI开放日",
+        "专访普林斯顿刘世隆丨人类是超强 Router，Agent 只是刚起步",
+        "智源TALK｜Embodied RSI把试错变成机器人真本事，哥伦比亚 & 普林斯顿大学",
+        "下一个颠覆性想法，等你来提出：InnoVibe青年创意路演招募",
+        "Agentic AI走向现实：DAI 2026香港大会注册开启",
+        "InnoVibe星月夜 AI Infra专场：模型往前跑，系统跟得上",
+        "十月科研月报上新，热点赛道不容错过",
+        "专访北大施柏鑫：从成像源头重新理解机器视觉，“慢下来”做重要的研究"
+      ],
+      "status": "collected-verified",
+      "added": 1,
+      "articles": [
+        {
+          "title": "报名 | 11.24 以真实，丈量智能：智源REAL物理AI开放日",
+          "publishedAt": "2026-11-09T14:47:00+08:00",
+          "publisher": "智源社区",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212700&ver=7077&signature=Uvkcg2s8Z-Yj5KJn*dtvE4--OnQ0K0WEmHvapdu8alprX2WnL2i5AtTzgObluKx7sePlYKRMKV8sEfTiubOc8HnFn0yZtvxHt1zCYSSPz39B0nJF-R2WMy3qfEUinTpC&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 847
+        }
+      ],
+      "reason": null
+    },
+    {
+      "account": "上海人工智能实验室",
+      "entry": "https://www.jintiankansha.com/column/PqAbsJxbpb?type=recent",
+      "collectedAt": "2026-11-09T16:22:18.461453+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "大模型自主设计“科学感官”，多模态框架书生·元征以RSI拓展大模型能力边界",
+        "自主实验室自进化中枢——书生·天枢（Sage·LabOS）上线，助力临港实验室加速核酸药物成药进程",
+        "“长江杯”全球AI蛋白质设计挑战赛赛题公布，上海AI实验室邀全球研究者共解序列谜题",
+        "司南评测新发现：大模型还无法真正改造蛋白质，“通专融合” 是突破关键",
+        "有“材华”、“研值”高，材料大模型MatVerse上线，从科学问答迈向新发现",
+        "你好新同学，上海AI实验室举行2026级博士生迎新活动",
+        "办大赛、聚人才、促合作，上海AI实验室携手产学研协同创新，推动“人工智能+”行动落地见效",
+        "递归自我改进（RSI）新进展！通专融合智能体书生-A1.5上线，验证真实科学场景驱动模型自进化新路径"
+      ],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "量子位",
+      "entry": "https://www.qbitai.com/",
+      "collectedAt": "2026-11-09T16:22:17.645239+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "夕小瑶科技说",
+      "entry": "https://www.jintiankansha.com/column/jYIAVuZotS?type=recent",
+      "collectedAt": "2026-11-09T16:22:18.586317+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "OpenAI 发布 GPT-6 Cyber，专攻网络安全",
+        "北坡开源 NorthCUA 全家桶！多项开源 SOTA，模型、Harness、123 页技术报告齐发",
+        "印度成ChatGPT最大市场，但退订教程满天飞",
+        "AI4S首个开源大模型Hydrogen-1.0发布：跑赢GPT-6-Astra，让AI自己做科研",
+        "Anthropic 开源 FlashProve，给大模型验明正身",
+        "Anthropic改了招股书，承认Claude无法替代自己的研发团队",
+        "今天，GPT-6.2 Astra和Mythos 5.5 同时曝出来了",
+        "写给用模型的人类：怎样使用AI更有野心"
+      ],
+      "status": "no-verified-article-in-range",
+      "added": 0,
+      "articles": [],
+      "reason": "公开入口未取得可核验日期在11月8–9日的文章；列表滞后或原文未定位，不判定为公众号没有推送。"
+    },
+    {
+      "account": "晚点LatePost",
+      "entry": "https://www.jintiankansha.com/column/nGqairAU3Z?type=recent",
+      "collectedAt": "2026-11-09T16:22:18.342008+08:00",
+      "httpStatus": 200,
+      "latestPublicCandidates": [
+        "华西医院的 AI 经验，如何成为更多医院的起点？",
+        "对话千觉马道林：当通用大模型走进物理世界，具身难点在 “触碰之后”",
+        "晚点独家丨自然选择完成 A+ 轮融资，要靠社交网络参与 Personal Agent 竞赛",
+        "大模型的数据生意：人类如何蒸馏自己",
+        "杨天真和前阿里投资人蒋珊珊，合伙做了一只新基金",
+        "人形机器人将过万台关口，最难的事才刚刚开始",
+        "出海 3.0 时代，中国品牌开始争夺搜索框之外的生意",
+        "好车，应该也是时间的朋友"
+      ],
+      "status": "collected-verified",
+      "added": 1,
+      "articles": [
+        {
+          "title": "华西医院的 AI 经验，如何成为更多医院的起点？",
+          "publishedAt": "2026-11-08T18:06:00+08:00",
+          "publisher": "晚点LatePost",
+          "source": "https://mp.weixin.qq.com/s?src=11&timestamp=1794212687&ver=7077&signature=14BMurYu-lQyLwdP38Y4DJ-PhrVYezCv0gaZI7nxp4nwEZ3gOyUtawL-ryhrBptLcVLLA-C7Iu9oRAOZZyK-tw7pr-dpU0Oxv7GCy-EQtn-9kW*1YOUtrUXZA40l*Yus&new=1",
+          "bodyStatus": "full",
+          "bodyCharacters": 5118
+        }
+      ],
+      "reason": null
+    }
+  ],
+  "excluded": [
+    {
+      "id": "datawhale-images",
+      "publishedAt": "2026-11-07T23:29:00+08:00",
+      "reason": "微信原文日期早于本次范围；标题已修改，不能用列表日期替代。"
+    },
+    {
+      "id": "mlnlp-sampling",
+      "publishedAt": "2026-11-05T00:00:00+08:00",
+      "reason": "搜索命中的微信原文早于本次范围。"
+    }
+  ],
+  "unresolved": [
+    "魔搭两篇11月9日列表候选（Sophon-Realtime、模型周报）未定位到该公众号可核验原文，搜索找到的AI降临派JLP版本不替代关注账号。",
+    "Datawhale OPC标准候选未定位到该公众号可核验原文。",
+    "微信入口来自搜狗签名跳转，可能到期失效；本地正文、图表、发布者与日期证据均已留存。"
+  ],
+  "successWatermarks": {
+    "Datawhale": {
+      "from": "2026-11-08",
+      "verifiedThrough": "2026-11-09T16:35:02.801746+08:00",
+      "coverage": "已处理公开发现且核验通过的文章，未保证微信推送完全覆盖。"
+    },
+    "MLNLP": {
+      "from": "2026-11-08",
+      "verifiedThrough": "2026-11-09T16:35:02.801746+08:00",
+      "coverage": "已处理公开发现且核验通过的文章，未保证微信推送完全覆盖。"
+    },
+    "晚点LatePost": {
+      "from": "2026-11-08",
+      "verifiedThrough": "2026-11-09T16:35:02.801746+08:00",
+      "coverage": "已处理公开发现且核验通过的文章，未保证微信推送完全覆盖。"
+    },
+    "智源社区": {
+      "from": "2026-11-08",
+      "verifiedThrough": "2026-11-09T16:35:02.801746+08:00",
+      "coverage": "已处理公开发现且核验通过的文章，未保证微信推送完全覆盖。"
+    }
+  }
+}

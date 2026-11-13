@@ -1,0 +1,44 @@
+{
+  "scope": "当前刊五篇简报重写预览，未正式采用",
+  "rulesVersion": "2026-11-12",
+  "passed": true,
+  "editorialPassed": true,
+  "editorialReviewPath": "editorial-review.md",
+  "articleIds": [
+    "datawhale-higgs-20261109",
+    "mlnlp-wsp-20261109",
+    "mlnlp-rsi-20261109",
+    "mlnlp-ppt-20261109",
+    "latepost-huaxi-20261109"
+  ],
+  "newCharacters": {
+    "datawhale-higgs-20261109": 302,
+    "mlnlp-wsp-20261109": 305,
+    "mlnlp-rsi-20261109": 315,
+    "mlnlp-ppt-20261109": 298,
+    "latepost-huaxi-20261109": 291
+  },
+  "oldTextMatchesProduction": true,
+  "renderedNewTextMatchesDraft": true,
+  "productionFilesUnchanged": 223,
+  "desktopEqualColumnsAnd18px": true,
+  "mobileNoPageOverflow": [
+    390,
+    320
+  ],
+  "pagerAndDisclosure": true,
+  "consoleIssues": [],
+  "fontCoverage": {
+    "sans": {
+      "source": "C:\\Windows\\Fonts\\NotoSansSC-VF.ttf",
+      "chineseMissing": [],
+      "bytes": 218496
+    },
+    "serif": {
+      "source": "C:\\Windows\\Fonts\\NotoSerifSC-VF.ttf",
+      "chineseMissing": [],
+      "bytes": 284048
+    }
+  },
+  "previewUrl": "http://127.0.0.1:8807/brief-rewrite-lab/"
+}

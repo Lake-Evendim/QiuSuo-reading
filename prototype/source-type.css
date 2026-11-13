@@ -1,0 +1,10 @@
+/* Publisher names use separate local Chinese and Latin faces. */
+@font-face{font-family:"Publisher Chinese";src:url('assets/fonts/publisher-chinese.woff2?v=3') format('woff2');font-weight:400;font-display:swap;unicode-range:U+2E80-9FFF,U+F900-FAFF}
+@font-face{font-family:"Publisher Latin";src:url('assets/fonts/publisher-latin.woff2?v=3') format('woff2');font-weight:400;font-display:swap;unicode-range:U+0000-024F}
+.reader-dialog.reader-with-outline .reader-meta{row-gap:6px}
+.reader-dialog.reader-with-outline .reader-meta .account-name{
+  color:var(--ink);font:400 22px/1.65 "Publisher Latin","Publisher Chinese",var(--sans);
+  letter-spacing:.01em;font-synthesis:none;
+}
+.reader-dialog.reader-with-outline .reader-meta .publisher-part{display:inline-block;white-space:nowrap}
+@media(max-width:580px){.reader-dialog.reader-with-outline .reader-meta .account-name{font-size:21px}}

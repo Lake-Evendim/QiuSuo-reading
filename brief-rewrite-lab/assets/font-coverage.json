@@ -1,0 +1,12 @@
+{
+  "sans": {
+    "source": "C:\\Windows\\Fonts\\NotoSansSC-VF.ttf",
+    "chineseMissing": [],
+    "bytes": 218496
+  },
+  "serif": {
+    "source": "C:\\Windows\\Fonts\\NotoSerifSC-VF.ttf",
+    "chineseMissing": [],
+    "bytes": 284048
+  }
+}

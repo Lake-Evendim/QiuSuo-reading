@@ -1,0 +1,31 @@
+{
+  "scope": "同刊五篇简报正式修订，不是新文章采集",
+  "adoptedOn": "2026-11-13",
+  "rulesVersion": "2026-11-12",
+  "technicalPassed": true,
+  "editorialPassed": true,
+  "editorialReviewPath": "editorial-review.md",
+  "passed": true,
+  "replacedArticleIds": [
+    "datawhale-higgs-20261109",
+    "mlnlp-wsp-20261109",
+    "mlnlp-rsi-20261109",
+    "mlnlp-ppt-20261109",
+    "latepost-huaxi-20261109"
+  ],
+  "unchangedArticleFields": true,
+  "historicalEditionFilesUnchanged": true,
+  "sourceSnapshotMatch": true,
+  "newBriefFontMissing": {
+    "sans": [],
+    "serif": []
+  },
+  "browserChecksPath": "browser-checks.json",
+  "uiViewports": [
+    1280,
+    390
+  ],
+  "consoleIssues": [],
+  "oldBriefsPath": "briefs-before.json",
+  "newBriefsPath": "briefs.json"
+}

@@ -1,0 +1,18 @@
+{
+  "chineseMissing": [],
+  "otherMissing": [
+    "U+000A",
+    "U+25B8",
+    "U+2705",
+    "U+274C",
+    "U+2764",
+    "U+FE0F",
+    "U+1F388",
+    "U+1F446",
+    "U+1F447",
+    "U+1F4A1",
+    "U+1F613"
+  ],
+  "bodyCharacters": 1714,
+  "bytes": 291080
+}

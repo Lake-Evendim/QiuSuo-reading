@@ -1,0 +1,101 @@
+/* Preview controls are separate; the production navigation and reader stay intact. */
+.refine-preview-bar{max-width:1400px;margin:auto;padding:16px var(--margin) 0;display:flex;align-items:center;gap:18px;font:500 12px/1.5 "Microsoft YaHei",sans-serif;color:#686a65}
+.refine-preview-bar strong{font-weight:500;color:#292a28}
+.refine-version-switch{display:flex;padding:3px;border:1px solid #ddded8;border-radius:7px;gap:2px}
+.refine-version-switch button{padding:6px 14px;border-radius:4px;color:#686a65;min-height:32px;font:inherit}
+.refine-version-switch button[aria-pressed=true]{background:#292a28;color:#fff}
+.refine-preview-bar>a{margin-left:auto;min-height:40px;display:flex;align-items:center;text-decoration:underline;text-underline-offset:4px}
+.channel-choice,.channel-return-sources{display:none!important}
+.channel-shelf-context{font:450 11px/1.7 var(--channel-sans);flex:none}
+
+/* Calm source index, stronger selected source, white reading surface. */
+html[data-channel-refine=refined] .channels-layout .channel-heading{padding:24px 0 28px}
+html[data-channel-refine=refined] .channel-heading h1{font-size:42px}
+html[data-channel-refine=refined] .channel-category{margin-bottom:20px}
+html[data-channel-refine=refined] .channel-category h2{min-width:220px;padding:12px 24px;font-size:29px}
+html[data-channel-refine=refined] .channel-category p,html[data-channel-refine=refined] .channel-category>span{padding:12px 22px}
+html[data-channel-refine=refined] .channels-layout .channel-group-content{grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);gap:30px}
+html[data-channel-refine=refined] .channels-layout .channel-source-list{gap:14px 18px}
+html[data-channel-refine=refined] .channels-layout .channel-source-name{min-height:60px;padding:11px 15px;gap:10px;background:var(--channel-tint);color:var(--ink)}
+html[data-channel-refine=refined] .channel-source-name h3{font-size:21px;line-height:1.45;overflow-wrap:normal;word-break:normal}
+html[data-channel-refine=refined] .channel-latin{white-space:nowrap;font-size:.94em}
+html[data-channel-refine=refined] .channel-source-detail{padding:10px 15px 13px;min-height:65px}
+html[data-channel-refine=refined] .channel-source-detail p{font-size:13px;line-height:1.75}
+html[data-channel-refine=refined] .channel-archive{margin-top:6px;font-weight:500;color:var(--ink-muted)}
+html[data-channel-refine=refined] .channel-source-name>svg:not(.channel-choice){display:none}
+html[data-channel-refine=refined] .channels-layout .channel-source-link.is-selected .channel-source-name{background:var(--channel-color);color:#fff;outline:0}
+html[data-channel-refine=refined] .channels-layout .channel-source-link.is-selected .channel-choice{display:block!important;width:16px;height:16px;transform:none;stroke-width:1.8}
+html[data-channel-refine=refined] .channel-source-link:hover .channel-source-name{box-shadow:inset 0 0 0 1px var(--channel-color)}
+html[data-channel-refine=refined] .channel-source-link:hover h3{text-decoration:none}
+html[data-channel-refine=refined] .channel-source-link:focus-visible{outline-offset:3px}
+html[data-channel-refine=refined] .channels-layout .channel-shelf{background:#fff;padding:18px 22px;border:1px solid var(--line);border-radius:6px;overflow:clip}
+html[data-channel-refine=refined] .channels-layout .channel-shelf-heading{position:sticky;top:calc(var(--masthead-height,72px) + 8px);z-index:2;background:#fff;border-bottom:1px solid var(--channel-color);padding-bottom:13px;gap:12px}
+html[data-channel-refine=refined] .channel-shelf-heading h3{font-size:19px;color:var(--ink)}
+html[data-channel-refine=refined] .channel-shelf-heading p{font-size:11px;color:var(--ink-muted);margin-bottom:4px}
+html[data-channel-refine=refined] .channels-layout .channel-shelf-items{scrollbar-color:var(--channel-color) #fff;padding-right:9px}
+html[data-channel-refine=refined] .channel-shelf-items::-webkit-scrollbar-track{background:#fff}
+html[data-channel-refine=refined] .channels-layout .channel-reading{padding:20px 0;gap:16px}
+html[data-channel-refine=refined] .channel-reading h4{font-size:24px;line-height:1.5;margin:8px 0 9px}
+html[data-channel-refine=refined] .channel-meta{font-size:11px;color:var(--ink-muted);gap:10px}
+html[data-channel-refine=refined] .channel-meta>span:first-child{display:none}
+html[data-channel-refine=refined] .channels-layout .channel-reading.with-image{grid-template-columns:minmax(0,1fr) 84px}
+html[data-channel-refine=refined] .channels-layout .channel-image{display:block}
+html[data-channel-refine=refined] .channels-layout .channel-image img{height:94px;object-fit:contain;background:#fff}
+html[data-channel-refine=refined] .channel-reading.with-image h4{font-size:22px}
+html[data-channel-refine=refined] .channel-shelf-empty{padding-top:24px}
+
+@media(max-width:1100px){
+ html[data-channel-refine=refined] .channels-layout .channel-group-content{grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);gap:24px}
+ html[data-channel-refine=refined] .channel-source-name h3{font-size:20px}
+ html[data-channel-refine=refined] .channels-layout .channel-shelf{padding:17px 19px}
+ html[data-channel-refine=refined] .channels-layout .channel-reading.with-image{grid-template-columns:minmax(0,1fr) 72px;gap:12px}
+ html[data-channel-refine=refined] .channel-reading.with-image h4{font-size:21px}
+}
+@media(max-width:820px){
+ html[data-channel-refine=refined] .channels-layout .channel-heading{display:block}
+ html[data-channel-refine=refined] .channels-layout .channel-group-content{display:block}
+ html[data-channel-refine=refined] .channels-layout .channel-shelf{margin-top:20px;height:auto;max-height:min(480px,65dvh);min-height:180px}
+ html[data-channel-refine=refined] .channels-layout .channel-shelf-items{flex:0 1 auto;max-height:calc(min(480px,65dvh) - 111px)}
+ html[data-channel-refine=refined] .channel-category h2{min-width:180px;font-size:27px;padding:12px 20px}
+ html[data-channel-refine=refined] .channel-category p,html[data-channel-refine=refined] .channel-category>span{padding:12px 16px}
+ html[data-channel-refine=refined] .channel-shelf-context{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+ html[data-channel-refine=refined] .channel-return-sources{display:inline-flex!important;align-items:center;gap:6px;min-height:40px;padding:0;font:500 12px/1.5 "Microsoft YaHei",sans-serif;color:var(--channel-color)}
+ html[data-channel-refine=refined] .channel-return-sources:hover{text-decoration:underline;text-underline-offset:4px}
+ html[data-channel-refine=refined] .channel-return-sources span{font-size:16px}
+}
+@media(max-width:580px){
+ .refine-preview-bar{padding-top:12px;gap:10px;flex-wrap:wrap;font-size:11px}
+ .refine-preview-bar>a{font-size:10px}
+ .refine-version-switch button{padding:5px 10px;font-size:11px}
+ html[data-channel-refine=refined] .channels-layout .channel-heading{padding:18px 0 24px}
+ html[data-channel-refine=refined] .channel-heading h1{font-size:32px}
+ html[data-channel-refine=refined] .channel-category{grid-template-columns:132px minmax(0,1fr);margin-bottom:17px}
+ html[data-channel-refine=refined] .channel-category h2{min-width:0;font-size:24px;padding:12px 14px}
+ html[data-channel-refine=refined] .channel-category p{padding:8px 12px 0}
+ html[data-channel-refine=refined] .channel-category>span{padding:3px 12px 8px}
+ html[data-channel-refine=refined] .channels-layout .channel-source-list{gap:12px}
+ html[data-channel-refine=refined] .channels-layout .channel-source-name{min-height:68px;padding:10px 12px;gap:6px}
+ html[data-channel-refine=refined] .channel-source-name h3{font-size:18px;line-height:1.4}
+ html[data-channel-refine=refined] .channel-latin{font-size:.92em}
+ html[data-channel-refine=refined] .channel-source-detail{padding:9px 12px 12px;min-height:67px}
+ html[data-channel-refine=refined] .channel-source-detail p{font-size:11px;line-height:1.8}
+ html[data-channel-refine=refined] .channels-layout .channel-shelf{max-height:min(420px,65dvh);padding:16px 17px;min-height:160px}
+ html[data-channel-refine=refined] .channels-layout .channel-shelf-items{max-height:calc(min(420px,65dvh) - 106px)}
+ html[data-channel-refine=refined] .channel-shelf-heading h3{font-size:18px}
+ html[data-channel-refine=refined] .channels-layout .channel-reading{padding:18px 0}
+ html[data-channel-refine=refined] .channel-reading h4,html[data-channel-refine=refined] .channel-reading.with-image h4{font-size:21px;line-height:1.55}
+ html[data-channel-refine=refined] .channel-meta{font-size:10px;gap:10px}
+ html[data-channel-refine=refined] .channels-layout .channel-reading.with-image{grid-template-columns:1fr;gap:8px}
+ html[data-channel-refine=refined] .channel-image{width:144px;justify-self:end}
+ html[data-channel-refine=refined] .channels-layout .channel-image img{height:96px}
+}
+@media(max-width:350px){
+ html[data-channel-refine=refined] .channel-category{grid-template-columns:118px minmax(0,1fr)}
+ html[data-channel-refine=refined] .channel-category h2{font-size:22px;padding:11px}
+ html[data-channel-refine=refined] .channels-layout .channel-source-name{padding:10px;gap:4px}
+ html[data-channel-refine=refined] .channel-source-name h3{font-size:17px}
+ html[data-channel-refine=refined] .channel-latin-long{font-size:.8em}
+ html[data-channel-refine=refined] .channel-source-detail{padding:9px 10px 12px}
+ html[data-channel-refine=refined] .channels-layout .channel-source-link.is-selected .channel-choice{width:14px;height:14px}
+ html[data-channel-refine=refined] .channel-shelf-context{gap:8px}
+}

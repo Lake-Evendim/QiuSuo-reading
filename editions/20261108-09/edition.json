@@ -1,0 +1,27 @@
+{
+  "id": "20261108-09",
+  "from": "2026-11-08",
+  "to": "2026-11-09",
+  "timezone": "Asia/Shanghai",
+  "updatedAt": "2026-11-09T16:35:02.801746+08:00",
+  "articleIds": [
+    "datawhale-higgs-20261109",
+    "mlnlp-wsp-20261109",
+    "latepost-huaxi-20261109",
+    "baai-real-20261109",
+    "mlnlp-ppt-20261109",
+    "mlnlp-altman-20261109",
+    "mlnlp-worldmodel-20261109",
+    "mlnlp-account-20261109",
+    "mlnlp-anthropic-20261109",
+    "mlnlp-rsi-20261109"
+  ],
+  "featuredIds": [
+    "datawhale-higgs-20261109",
+    "mlnlp-wsp-20261109",
+    "mlnlp-rsi-20261109",
+    "mlnlp-ppt-20261109",
+    "latepost-huaxi-20261109"
+  ],
+  "coverage": "公开来源已核验10篇，不代表17个公众号全部推送均已采齐。"
+}

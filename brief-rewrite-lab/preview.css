@@ -1,0 +1,43 @@
+@font-face{font-family:"Preview Sans";src:url("assets/preview-sans.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Preview Serif";src:url("assets/preview-serif.woff2") format("woff2");font-weight:200 900;font-display:swap}
+:root{font-family:"Preview Sans","Noto Sans SC","Microsoft YaHei",sans-serif;color:#242a30;background:#fff;font-synthesis:none;--muted:#626b76;--line:#dfe3e7;--accent:#365a85}
+*{box-sizing:border-box}
+body{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+button:disabled{color:#9da3ab;cursor:default}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.masthead{height:64px;max-width:1280px;margin:auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.project-link{text-decoration:none;font-size:21px;font-weight:650;display:flex;align-items:baseline;gap:18px}
+.project-link span{font-size:12px;font-weight:400;color:var(--muted)}
+.preview-label{font-size:13px;color:var(--muted)}
+main{max-width:1200px;padding:36px 40px 48px;margin:auto}
+.intro{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px}
+.eyebrow{font-size:12px;color:var(--muted);margin:0 0 10px;letter-spacing:.08em}
+h1{font-family:"Preview Serif",serif;font-size:30px;font-weight:600;line-height:1.5;margin:0}
+.intro>p{font-size:13px;color:var(--muted);line-height:1.8;margin:0 0 5px}
+.mobile-caption{display:none}
+.article-nav{display:flex;border-bottom:1px solid var(--line);gap:6px;margin-bottom:30px;overflow-x:auto;scrollbar-width:thin}
+.article-nav button{min-height:46px;border:0;border-bottom:2px solid transparent;background:transparent;white-space:nowrap;padding:0 18px;font-size:14px}
+.article-nav button span{font-size:11px;margin-right:8px;color:var(--muted);font-variant-numeric:tabular-nums}
+.article-nav button[aria-current="true"]{border-bottom-color:var(--accent);color:var(--accent);font-weight:600}
+.article-meta{font-size:13px;color:var(--muted);margin:0 0 12px}
+h2{font-family:"Preview Serif",serif;font-weight:600;line-height:1.5;font-size:27px;max-width:920px;margin:0 0 25px;overflow-wrap:anywhere}
+.comparison-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.version-header{display:flex;align-items:baseline;justify-content:space-between;padding:12px 0;border-top:2px solid #242a30;margin-bottom:16px}
+.version-header h3{font-size:16px;font-weight:600;margin:0}
+.version-header span{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.brief{font-size:18px;line-height:1.9;overflow-wrap:anywhere}
+.brief p{margin:0 0 18px}
+.brief .reason{background:#f0f3f7;padding:14px 18px;margin-bottom:22px;font-weight:400;line-height:1.8;border-radius:3px}
+.brief .reason strong{font-weight:600}
+.change-note{border-top:1px solid var(--line);padding:15px 0;margin-top:14px;font-size:13px;color:var(--muted);line-height:1.8}
+.change-note summary{cursor:pointer;width:max-content;max-width:100%}
+.change-note p{max-width:780px;margin:10px 0 0}
+.pager{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+.pager button{min-height:44px;min-width:98px;padding:8px 12px;border:0;background:transparent}
+.pager>span{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.load-error{padding:24px;border:1px solid var(--line)}
+@media(max-width:800px){.masthead{padding:0 24px}main{padding:28px 24px 32px}.intro{display:block}.intro>p{margin-top:12px}.intro>p br{display:none}.comparison-columns{gap:28px}h2{font-size:24px}.article-nav button{padding:0 12px}}
+@media(max-width:640px){.masthead{height:58px;padding:0 20px}.project-link{font-size:19px;gap:10px}.project-link span{font-size:11px}.preview-label{font-size:11px}main{padding:24px 20px 32px}.intro h1{font-size:25px}.intro>p{font-size:12px}.desktop-caption{display:none}.mobile-caption{display:inline}.article-nav{margin-bottom:24px}.comparison-columns{grid-template-columns:1fr;gap:20px}h2{font-size:23px;margin-bottom:24px}.brief{font-size:18px}.brief .reason{padding:12px 15px}.version-header{margin-bottom:14px}.pager{margin-top:12px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}

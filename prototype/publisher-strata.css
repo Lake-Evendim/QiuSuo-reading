@@ -1,0 +1,38 @@
+/* A live signature, confined to the source's own whitespace. */
+html[data-scheme=journal] .digest .source-margin .account-name {
+  display:block;position:relative;max-inline-size:100%;min-block-size:0;
+  padding:0;border:0;border-radius:0;background:none;
+  font:400 22px/1.45 "Publisher Latin","Publisher Chinese",var(--sans);
+  letter-spacing:.01em;font-synthesis:none;color:var(--accent);text-decoration:none;
+}
+html[data-scheme=journal] .digest .source-margin[data-source-group="行业研究"] .account-name {
+  color:var(--research-ink,#7b655d);
+}
+html[data-scheme=journal] .digest .source-margin .account-name:hover {
+  background:none;color:var(--accent);text-decoration:none;
+}
+html[data-scheme=journal] .digest .source-margin[data-source-group="行业研究"] .account-name:hover {
+  color:var(--research-ink,#7b655d);
+}
+html[data-scheme=journal] .digest .source-margin time {display:none}
+html[data-scheme=journal] .reader-meta .publisher-signature {position:relative}
+.publisher-signature .publisher-name-text {display:block;max-inline-size:100%}
+.publisher-signature .publisher-name-part {display:inline-block;white-space:nowrap}
+.publisher-signature .publisher-particles {
+  position:absolute;display:none;max-width:none;max-height:none;
+  pointer-events:none;z-index:1;background:none;border:0;visibility:hidden;
+  contain:strict;transform:translateZ(0);
+}
+/* One prepared surface stays in place through rest, fracture and recovery.
+   Transparent native text keeps layout, selection and accessible link names. */
+.publisher-signature.publisher-ready .publisher-name-text {opacity:0}
+.publisher-signature.publisher-ready .publisher-particles {display:block;visibility:visible}
+@media(max-width:580px) {
+  html[data-scheme=journal] .digest .source-margin .account-name {font-size:21px;min-block-size:44px}
+}
+@media(prefers-reduced-motion:reduce), (hover:none), (pointer:coarse) {
+  .publisher-signature.publisher-ready .publisher-name-text {opacity:1}
+  .publisher-signature .publisher-particles {display:none!important}
+}
+.reduce-motion .publisher-signature.publisher-ready .publisher-name-text {opacity:1}
+.reduce-motion .publisher-signature .publisher-particles {display:none!important}

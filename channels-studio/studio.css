@@ -1,0 +1,112 @@
+@font-face{font-family:Studio Sans;src:url('fonts/studio-sans.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:Studio Serif;src:url('fonts/studio-serif.woff2') format('woff2');font-weight:200 900;font-display:swap}
+.studio-preview .source-directory{--s-ink:#292a28;--s-muted:#646761;--s-line:#ddded8;--s-sans:"Studio Sans","Microsoft YaHei",sans-serif;--s-serif:"Studio Serif",serif;padding-top:0;font-family:var(--s-sans)}
+.studio-preview .studio-labbar{display:flex;align-items:center;gap:20px;padding:12px 0;border-bottom:1px solid var(--s-line);font:450 12px/1.5 var(--s-sans)}
+.studio-preview .studio-lab-label{color:var(--s-muted);white-space:nowrap}
+.studio-preview .studio-options{display:flex;gap:5px}
+.studio-preview .studio-options a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border-radius:5px;text-decoration:none;color:var(--s-ink);background:#f3f3f0}
+.studio-preview .studio-options a[aria-current=page]{background:var(--s-ink);color:#fff}
+.studio-preview .studio-options b{font-weight:600}
+.studio-preview .studio-previous{margin-left:auto;color:var(--s-muted);text-underline-offset:4px;min-height:40px;display:flex;align-items:center;white-space:nowrap}
+.studio-preview .studio-explanation{margin:12px 0 0;color:var(--s-muted);font:400 12px/1.7 var(--s-sans)}
+.studio-preview .studio-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:28px 0 32px}
+.studio-preview .studio-heading h1{font:550 48px/1.4 var(--s-serif);color:var(--s-ink);margin:0;letter-spacing:-.025em}
+.studio-preview .studio-heading p{font:400 13px/1.8 var(--s-sans);color:var(--s-muted);margin:0}
+.studio-preview #source-results{display:block}
+html[data-scheme=journal] .studio-preview .source-group.studio-group{--s-color:#626b50;--s-tint:#eff1e9;display:block;padding:0;margin:0 0 48px;background:none;border:0;min-width:0}
+html[data-scheme=journal] .studio-preview .studio-group.studio-research{--s-color:#7b655d;--s-tint:#f3efeb}
+.studio-preview .studio-group-heading{display:flex;align-items:baseline;gap:24px;padding:0 0 20px}
+.studio-preview .studio-group-heading h2{font:600 34px/1.5 var(--s-serif);color:var(--s-color);margin:0;white-space:nowrap}
+.studio-preview .studio-group-heading p{font:400 13px/1.8 var(--s-sans);color:var(--s-muted);margin:0}
+.studio-preview .studio-group-heading>span{font:450 12px/1.6 var(--s-sans);color:var(--s-color);margin-left:auto;white-space:nowrap}
+.studio-preview .studio-group-content{min-width:0}
+.studio-preview .studio-source-list{display:grid;min-width:0}
+.studio-preview .studio-source{min-width:0}
+.studio-preview .studio-source-link{text-decoration:none;color:var(--s-ink)}
+.studio-preview .studio-source-identity h3{margin:0;color:inherit;overflow-wrap:anywhere;text-wrap:pretty}
+.studio-preview .studio-source-description p{font:400 14px/1.85 var(--s-sans);color:var(--s-muted);margin:0;overflow-wrap:anywhere}
+.studio-preview .source-directory svg{display:block;width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.studio-preview .studio-archive{display:inline-flex;align-items:center;gap:6px;margin-top:9px;color:var(--s-color);font:500 11px/1.7 var(--s-sans)}
+.studio-preview .studio-archive svg{width:14px;height:14px}
+.studio-preview .studio-reading{display:block;text-align:left;width:100%;min-width:0;padding:18px 0;background:none;color:var(--s-ink);border:0;border-bottom:1px solid var(--s-line);border-radius:0}
+.studio-preview .studio-reading-copy{display:block;min-width:0}
+.studio-preview .studio-reading-meta{display:flex;align-items:center;gap:7px 12px;flex-wrap:wrap;color:var(--s-color);font:450 11px/1.7 var(--s-sans)}
+.studio-preview .studio-reading-title{display:block;font:600 20px/1.65 var(--s-serif);margin-top:8px;overflow-wrap:anywhere;text-wrap:pretty}
+.studio-preview .studio-reading-cue{display:inline-block;font:450 11px/1.7 var(--s-sans);margin-top:12px;color:var(--s-color);text-decoration:underline;text-underline-offset:4px}
+.studio-preview .studio-source-link:hover h3,.studio-preview .studio-reading:hover .studio-reading-title{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.studio-preview .studio-source-link:focus-visible,.studio-preview .studio-reading:focus-visible,.studio-preview .studio-labbar a:focus-visible,.studio-preview .studio-source-choice:focus-visible,.studio-preview .studio-selection-actions>*:focus-visible,.studio-preview .studio-selection-empty a:focus-visible{outline:2px solid var(--s-color,#626b50);outline-offset:4px;border-radius:3px}
+html[data-scheme=journal] .studio-preview .directory-note{font:400 11px/1.8 var(--s-sans);padding:16px 0 0;border-top:1px solid var(--s-line);color:var(--s-muted);margin:0}
+/* G: a publisher index and a reading column, joined by a complete subject banner. */
+[data-studio=g] .studio-group-heading{padding:0;align-items:stretch;gap:0;background:var(--s-tint);border-radius:5px;overflow:hidden;margin-bottom:24px}
+[data-studio=g] .studio-group-heading h2{display:flex;align-items:center;background:var(--s-color);color:#fff;font:550 38px/1.4 var(--s-serif);padding:18px 28px;min-width:245px}
+[data-studio=g] .studio-group-heading p{display:flex;align-items:center;padding:18px 24px;color:var(--s-color)}
+[data-studio=g] .studio-group-heading>span{display:flex;align-items:center;padding:18px 24px}
+[data-studio=g] .studio-group-content{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:34px;align-items:start}
+[data-studio=g] .studio-source-list{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:26px}
+[data-studio=g] .studio-source{border-bottom:1px solid var(--s-line)}
+[data-studio=g] .studio-source-link{display:block;padding:17px 0 22px;min-height:132px;height:100%}
+[data-studio=g] .studio-source-identity h3{font:600 25px/1.5 var(--s-serif);margin-bottom:9px}
+[data-studio=g] .studio-source-description p{font-size:13px}
+[data-studio=g] .studio-reading-shelf{background:var(--s-tint);padding:21px 24px 3px;border-radius:5px;min-width:0}
+[data-studio=g] .studio-reading-shelf>h3{font:550 14px/1.7 var(--s-sans);color:var(--s-color);margin:0;padding-bottom:4px}
+[data-studio=g] .studio-reading.with-image{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;align-items:start}
+[data-studio=g] .studio-reading>img{display:block;width:84px;height:86px;object-fit:contain;mix-blend-mode:multiply;margin-top:4px}
+[data-studio=g] .studio-reading-title{font-size:20px}
+[data-studio=g] .studio-reading:last-child{border-bottom:0}
+/* H: horizontal publisher identity plates, using actual narrow display letterforms. */
+/* I: selecting a publisher opens its real archived reading in one shared spread. */
+@media(max-width:1100px){
+ [data-studio=g] .studio-group-content{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:24px}
+ [data-studio=g] .studio-reading-shelf{padding:18px 20px 2px}
+ [data-studio=g] .studio-reading.with-image{display:block}
+ [data-studio=g] .studio-reading>img{display:none}
+}
+@media(max-width:820px){
+ .studio-preview .studio-heading{display:block}
+ .studio-preview .studio-heading p{margin-top:9px}
+ .studio-preview .studio-lab-label{display:none}
+ .studio-preview .studio-group-heading p{font-size:12px}
+ [data-studio=g] .studio-group-heading h2{min-width:205px;font-size:32px;padding:17px 22px}
+ [data-studio=g] .studio-group-heading p{padding:16px}
+ [data-studio=g] .studio-group-heading>span{padding:16px}
+ [data-studio=g] .studio-group-content{display:block}
+ [data-studio=g] .studio-reading-shelf{margin-top:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}
+ [data-studio=g] .studio-reading-shelf>h3{grid-column:1/-1}
+ [data-studio=g] .studio-reading{border-bottom:0}
+ [data-studio=g] .studio-source-link{min-height:122px}
+}
+@media(max-width:580px){
+ .studio-preview .studio-labbar{display:block;padding:4px 0 12px}
+ .studio-preview .studio-options{gap:4px}
+ .studio-preview .studio-options a{min-height:44px;flex:1;padding:0 8px;font-size:11px;gap:5px}
+ .studio-preview .studio-previous{justify-content:flex-end;margin-top:6px;min-height:28px;font-size:11px}
+ .studio-preview .studio-explanation{font-size:11px}
+ .studio-preview .studio-heading{padding:22px 0 25px}
+ .studio-preview .studio-heading h1{font-size:33px}
+ .studio-preview .studio-heading p{font-size:12px}
+ html[data-scheme=journal] .studio-preview .source-group.studio-group{margin-bottom:33px}
+ .studio-preview .studio-group-heading{gap:12px;flex-wrap:wrap;padding-bottom:14px}
+ .studio-preview .studio-group-heading h2{font-size:28px}
+ .studio-preview .studio-group-heading p{font-size:11px}
+ .studio-preview .studio-group-heading>span{font-size:11px}
+ [data-studio=g] .studio-group-heading{display:grid;grid-template-columns:142px minmax(0,1fr);margin-bottom:12px;gap:0;padding:0}
+ [data-studio=g] .studio-group-heading h2{font-size:27px;min-width:0;padding:14px 15px;grid-row:1/3}
+ [data-studio=g] .studio-group-heading p{padding:10px 13px 0;line-height:1.8}
+ [data-studio=g] .studio-group-heading>span{padding:3px 13px 10px;margin:0;font-size:10px}
+ [data-studio=g] .studio-source-list{gap:0 17px}
+ [data-studio=g] .studio-source-link{padding:15px 0 18px;min-height:125px}
+ [data-studio=g] .studio-source-identity h3{font-size:20px;margin-bottom:8px}
+ [data-studio=g] .studio-source-description p{font-size:11px;line-height:1.9}
+ [data-studio=g] .studio-archive{font-size:10px;gap:5px}
+ [data-studio=g] .studio-reading-shelf{display:block;padding:17px 19px 0;margin-top:17px}
+ [data-studio=g] .studio-reading{border-bottom:1px solid var(--s-line);padding:15px 0 18px}
+ [data-studio=g] .studio-reading.with-image{display:grid;grid-template-columns:70px minmax(0,1fr);gap:12px}
+ [data-studio=g] .studio-reading>img{display:block;width:70px;height:72px}
+ [data-studio=g] .studio-reading-title{font-size:18px}
+ [data-studio=g] .studio-reading-meta{font-size:10px;gap:6px 9px}
+}
+@media(max-width:350px){
+ [data-studio=g] .studio-group-heading{grid-template-columns:128px minmax(0,1fr)}
+ [data-studio=g] .studio-group-heading h2{font-size:25px;padding:13px}
+ [data-studio=g] .studio-source-identity h3{font-size:19px}
+}

@@ -1,0 +1,51 @@
+/* One material system per preview. Typography, column sizes and imagery stay original. */
+html[data-comfort][data-palette=ink][data-scheme=journal]{
+  --surface:var(--comfort-base);--bg:var(--comfort-sunk);--ink:var(--comfort-ink);--muted:var(--comfort-muted);--ink-muted:var(--comfort-muted);--line:var(--comfort-line);--accent:var(--comfort-green);--accent-hover:var(--comfort-green);--media:var(--comfort-sunk);--reason-bg:var(--comfort-greenTint);--research-bg:var(--comfort-brownTint);--research-ink:var(--comfort-brown)
+}
+html[data-comfort] body,html[data-comfort] .reader-dialog,html[data-comfort] .reading-toolbar,html[data-comfort] .reader-paper,html[data-comfort] .reader-layout .toc-panel{background:var(--comfort-base)}
+html[data-comfort][data-palette=ink] .journal-nav a[aria-current=page]{background:var(--comfort-sunk);color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink] .reader-with-outline .toc-panel nav [data-jump]{color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink] .reader-dialog.reader-with-outline .toc-panel nav button.subchapter{color:var(--comfort-muted)}
+html[data-comfort][data-palette=ink] .reader-with-outline .toc-panel .toc-number,html[data-comfort][data-palette=ink] .reader-with-outline .outline-disclosure,html[data-comfort][data-palette=ink] .reader-with-outline .toc-panel nav .outline-start{color:var(--comfort-muted)}
+html[data-comfort][data-palette=ink] .reader-dialog.reader-with-outline .toc-panel nav button.current{color:var(--comfort-ink);background:var(--comfort-greenTint)}
+html[data-comfort][data-palette=ink] .reader-with-outline .toc-panel nav button:hover,html[data-comfort][data-palette=ink] .reader-with-outline .toc-restore:hover{background:var(--comfort-sunk);color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink] .reader-with-outline .toc-panel nav{scrollbar-color:var(--comfort-line) transparent}
+html[data-comfort][data-palette=ink] .reading-progress i{background:var(--comfort-green)}
+html[data-comfort][data-palette=ink] .reader-with-outline .outline-scrim{background:#171b1970}
+html[data-comfort] .reader-panel.settings-panel,html[data-comfort] .search-dialog,html[data-comfort] .update-dialog,html[data-comfort] .masthead-menu{background:var(--comfort-raised);border-color:var(--comfort-line);color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink] :is(.code-block,.prose th,.image-fallback,.prompt-box,.library-search,.resume-note){background:var(--comfort-sunk);border-color:var(--comfort-line);color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink] .prose pre{color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink] :is(.code-copy:hover,.motion-toggle,.decoration-toggle,.segmented button[aria-pressed=true]){background:var(--comfort-greenTint);color:var(--comfort-green)}
+html[data-comfort][data-palette=ink][data-scheme=journal] .reason-key{background:var(--comfort-sunk);color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink][data-scheme=journal] .reason-key:before{background:var(--comfort-line)}
+html[data-comfort][data-palette=ink][data-scheme=journal] :is(.read-button,.primary-link,.primary-button,.article-actions.action-strip .read-button){background:var(--comfort-button);border-color:var(--comfort-button);color:var(--comfort-onButton)}
+html[data-comfort][data-palette=ink][data-scheme=journal] :is(.read-button,.primary-link,.primary-button,.article-actions.action-strip .read-button):hover{background:var(--comfort-greenSolid);border-color:var(--comfort-greenSolid);color:var(--comfort-onSolid)}
+html[data-comfort][data-palette=ink][data-scheme=journal] .article-actions.action-strip .source-link{background:var(--comfort-raised);color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink][data-scheme=journal] .article-actions.action-strip .save-button{background:var(--comfort-sunk);color:var(--comfort-ink)}
+html[data-comfort][data-palette=ink][data-scheme=journal] .article-actions.action-strip .save-button.saved{color:var(--comfort-green)}
+html[data-comfort][data-palette=ink][data-scheme=journal] .article-actions.action-strip .source-link:hover{background:var(--comfort-brownTint);color:var(--comfort-brown)}
+html[data-comfort][data-palette=ink][data-scheme=journal] .article-actions.action-strip .save-button:hover{background:var(--comfort-greenTint)}
+html[data-comfort] .image-dialog{background:var(--comfort-sunk);color:var(--comfort-ink)}
+html[data-comfort] .image-toolbar{background:var(--comfort-raised);border-color:var(--comfort-line)}
+html[data-comfort=night] .brand-logo{filter:grayscale(1) invert(1)}
+html[data-comfort] ::selection{background:var(--comfort-greenTint);color:var(--comfort-ink)}
+html[data-comfort][data-scheme=journal] .channels-layout .source-directory{--bg:var(--comfort-base);--ink:var(--comfort-ink);--ink-muted:var(--comfort-muted);--line:var(--comfort-line);--accent:var(--comfort-green)}
+html[data-comfort][data-scheme=journal] .channels-layout .source-group.channel-group{--channel-color:var(--comfort-green);--channel-solid:var(--comfort-greenSolid);--channel-tint:var(--comfort-greenTint)}
+html[data-comfort][data-scheme=journal] .channels-layout .source-group.channel-group.channel-research{--channel-color:var(--comfort-brown);--channel-solid:var(--comfort-brownSolid);--channel-tint:var(--comfort-brownTint)}
+html[data-comfort] .channel-category h2,html[data-comfort] .has-reading .channel-source-name{background:var(--channel-solid);color:var(--comfort-onSolid)}
+html[data-comfort] .channel-source-name{background:var(--channel-tint);color:var(--channel-color)}
+html[data-comfort] .channel-image img{background:var(--comfort-raised)}
+
+/* Preview controls are separate from the site's design and use complete system fonts. */
+.comfort-preview-bar{max-width:1400px;margin:auto;padding:16px var(--margin) 0;display:flex;align-items:center;justify-content:space-between;gap:16px;color:var(--comfort-muted);font:500 13px/1.5 "Microsoft YaHei",sans-serif}
+.comfort-preview-options,.comfort-preview-links{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.comfort-preview-options strong{color:var(--comfort-ink);font-weight:500}
+.comfort-preview-links a{min-height:40px;display:inline-flex;align-items:center;padding:6px 0}
+.comfort-preview-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.comfort-preview-links a[aria-current=page]{color:var(--comfort-ink);text-decoration:underline;text-underline-offset:4px}
+.comfort-preview-bar select,.comfort-reader-picker select{font:500 13px/1.5 "Microsoft YaHei",sans-serif;background:var(--comfort-sunk);color:var(--comfort-ink);border:1px solid var(--comfort-line);border-radius:6px;min-height:36px;padding:5px 8px;max-width:100%;cursor:pointer}
+.comfort-reader-picker{display:block;min-width:0}
+.comfort-reader-picker select{width:128px}
+html[data-comfort] .reader-with-outline .reading-tools{gap:12px}
+@media(max-width:820px){.comfort-preview-bar{align-items:flex-start;flex-direction:column;gap:2px;padding-top:12px}.comfort-preview-links{font-size:12px;gap:18px}}
+@media(max-width:580px){.comfort-preview-options{gap:10px}.comfort-preview-bar select{width:130px}.comfort-reader-picker select{width:118px;font-size:12px}.comfort-preview-options strong{font-size:12px}html[data-comfort] .reader-with-outline .reading-tools{gap:4px}}

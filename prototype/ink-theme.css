@@ -1,0 +1,69 @@
+/* Adopted ink and moss palette. Loaded after brand.css; layout, type and article imagery are retained. */
+html[data-palette=ink][data-scheme=journal]{--bg:#f3f3f0;--surface:#fff;--ink:#292a28;--muted:#686a65;--ink-muted:var(--muted);--accent:#626b50;--accent-hover:#505943;--line:#ddded8;--media:#f3f3f0;--reason-bg:#eff1e9;--research-bg:#f3efeb;--research-ink:#7b655d}
+html[data-palette=ink] .brand-logo{filter:grayscale(1)}
+html[data-palette=ink] .page-mark{color:var(--ink)}
+html[data-palette=ink] .journal-nav a.active,html[data-palette=ink] .journal-nav a[aria-current=page]{background:#f3f3f0;color:var(--ink)}
+html[data-palette=ink] .journal-nav a:hover{color:var(--ink)}
+html[data-palette=ink][data-scheme=journal] .read-button,html[data-palette=ink][data-scheme=journal] .primary-link,html[data-palette=ink][data-scheme=journal] .article-actions.action-strip .read-button{background:#292a28;border-color:#292a28;color:#fff}
+html[data-palette=ink][data-scheme=journal] .read-button:hover,html[data-palette=ink][data-scheme=journal] .primary-link:hover,html[data-palette=ink][data-scheme=journal] .article-actions.action-strip .read-button:hover{background:#454640;border-color:#454640;color:#fff}
+html[data-palette=ink][data-scheme=journal] .article-actions.action-strip .save-button{background:#f3f3f0;color:var(--ink)}
+html[data-palette=ink][data-scheme=journal] .article-actions.action-strip .save-button.saved{background:#f3f3f0;color:var(--accent)}
+html[data-palette=ink][data-scheme=journal] .article-actions.action-strip .source-link:hover{background:#f4ece5;color:#6d513d}
+html[data-palette=ink][data-scheme=journal] .article-actions.action-strip .save-button:hover{background:#eeefea;color:var(--accent)}
+html[data-palette=ink][data-scheme=journal] .reason-key{background:#f5f5f2;color:#464844}
+html[data-palette=ink][data-scheme=journal] .reason-key:before{background:#a3a59e}
+html[data-palette=ink][data-scheme=journal] .source-group-heading{background:#eff1e9;border-left-color:#626b50}
+html[data-palette=ink][data-scheme=journal] .source-group-heading h2{color:#626b50}
+html[data-palette=ink][data-scheme=journal] .source-group[data-source-group="行业研究"] .source-group-heading{background:#f3efeb;border-left-color:#7b655d}
+html[data-palette=ink][data-scheme=journal] .source-group[data-source-group="行业研究"] .source-group-heading h2{color:#7b655d}
+html[data-palette=ink][data-scheme=journal] .source-filters button[aria-pressed=true]{background:#f3f3f0;color:var(--ink)}
+html[data-palette=ink][data-scheme=journal] .source-filters button[data-source-filter="工程实践"][aria-pressed=true]{background:#eff1e9;color:#626b50}
+html[data-palette=ink][data-scheme=journal] .source-filters button[data-source-filter="行业研究"][aria-pressed=true]{background:#f3efeb;color:#7b655d}
+html[data-palette=ink][data-scheme=journal] .source-entry-status.has-archive{background:#f3f3f0;color:var(--muted)}
+html[data-palette=ink][data-scheme=journal] .save-button.edition-save.saved,html[data-palette=ink][data-scheme=journal] .segmented button[aria-pressed=true]{background:#eff1e9;border-color:#ddded8;color:var(--accent)}
+html[data-palette=ink] .reader-with-outline .toc-panel nav [data-jump]{color:var(--ink)}
+html[data-palette=ink] .reader-dialog.reader-with-outline .toc-panel nav button.subchapter{color:#565952}
+html[data-palette=ink] .reader-with-outline .toc-panel .toc-number,html[data-palette=ink] .reader-with-outline .outline-disclosure,html[data-palette=ink] .reader-with-outline .toc-panel nav .outline-start{color:var(--muted)}
+html[data-palette=ink] .reader-with-outline .toc-panel .contains-current>.outline-chapter-heading>[data-jump]{color:var(--ink);font-weight:500}
+html[data-palette=ink] .reader-dialog.reader-with-outline .toc-panel nav button.current{color:var(--ink);background:#eff1e9;font-weight:600}
+html[data-palette=ink] .reader-with-outline .toc-panel nav button:hover{color:var(--ink);background:#f3f3f0}
+html[data-palette=ink] .reader-with-outline .toc-restore[aria-expanded=true]{background:#f3f3f0;color:var(--ink)}
+html[data-palette=ink] .reading-progress i{background:#454640}
+html[data-palette=ink] ::selection{background:#e0e4d7;color:#292a28}
+
+/* Complete the adopted palette across source cards and reading tools. */
+html[data-palette=ink][data-scheme=journal] .source-entry.source-ready{background:#f5f6f2;border-color:var(--line);border-left-color:var(--accent)}
+html[data-palette=ink][data-scheme=journal] .source-entry.source-ready:hover{background:var(--reason-bg)}
+html[data-palette=ink][data-scheme=journal] .source-group[data-source-group="行业研究"] .source-entry.source-ready{background:#f7f5f2;border-left-color:var(--research-ink)}
+html[data-palette=ink][data-scheme=journal] .source-group[data-source-group="行业研究"] .source-entry.source-ready:hover{background:var(--research-bg)}
+html[data-palette=ink][data-scheme=journal] .source-group[data-source-group="行业研究"] .source-entry:hover h3{color:var(--research-ink)}
+html[data-palette=ink][data-scheme=journal] .source-group[data-source-group="行业研究"] .source-entry.source-ready:after{border-color:var(--research-ink)}
+html[data-palette=ink] .source-entry:after{border-color:#969990}
+html[data-palette=ink] .digest-heading p>span,html[data-palette=ink] .source-breadcrumb>span{color:#969990}
+html[data-palette=ink] .reader-with-outline .outline-heading h2{color:var(--ink)}
+html[data-palette=ink] .reader-with-outline .outline-heading p{color:var(--muted)}
+html[data-palette=ink] .reader-with-outline .toc-panel nav{scrollbar-color:#bcbfb6 transparent}
+html[data-palette=ink] .reader-with-outline .outline-scrim{background:#292a2838}
+html[data-palette=ink] .code-block{background:#f5f5f2;border-color:var(--line)}
+html[data-palette=ink] .code-label,html[data-palette=ink] .prose td,html[data-palette=ink] .prose th{border-color:var(--line)}
+html[data-palette=ink] .prose pre{color:var(--ink)}
+html[data-palette=ink] .prose th,html[data-palette=ink] .image-fallback{background:#f5f5f2}
+html[data-palette=ink] .prose li::marker{color:var(--muted)}
+html[data-palette=ink] .code-copy:hover,html[data-palette=ink] .motion-toggle,html[data-palette=ink] .prompt-box{background:var(--reason-bg)}
+html[data-palette=ink] .setting-row{border-bottom-color:var(--line)}
+html[data-palette=ink] .stepper,html[data-palette=ink] .segmented{background:var(--bg)}
+html[data-palette=ink] .library-search{border-color:var(--line);background:#f6f7f3}
+html[data-palette=ink] .library-search:hover{border-color:#b7bdae}
+html[data-palette=ink] .library-search:focus-within{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px #626b5014}
+html[data-palette=ink] .search-result:hover,html[data-palette=ink] .search-result:focus-visible{background:var(--reason-bg)}
+html[data-palette=ink] .search-dialog::backdrop{background:#292a2838}
+html[data-palette=ink] .image-dialog::backdrop{background:#292a2870}
+html[data-palette=ink] .outlined-button{border-color:var(--line)}
+html[data-palette=ink] .outlined-button:hover{background:var(--reason-bg)}
+html[data-palette=ink] .primary-button{background:var(--ink)}
+html[data-palette=ink] .primary-button:hover{background:#454640}
+html[data-palette=ink] .toast{background:var(--ink)}
+html[data-palette=ink][data-scheme=journal] .reader-panel,html[data-palette=ink] .masthead-menu{box-shadow:0 10px 30px #292a2812}
+html[data-palette=ink][data-scheme=journal] .reader-with-outline .reader-panel.toc-panel{box-shadow:none}
+html[data-palette=ink] .search-dialog{box-shadow:0 24px 90px #292a2822}
+html[data-palette=ink] .update-dialog{box-shadow:0 20px 70px #292a281c}

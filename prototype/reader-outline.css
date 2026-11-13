@@ -1,0 +1,86 @@
+@font-face{font-family:"Reader Outline Sans";src:url("assets/fonts/outline-sans.woff2?v=2") format("woff2");font-weight:400 600;font-display:swap}
+/* The prose keeps the window's center. Navigation lives in the page margin. */
+.reader-dialog.reader-with-outline{--reader-outline-family:"Reader Outline Sans",sans-serif;--reader-prose-width:800px;--reader-toolbar-height:48px;scrollbar-gutter:stable both-edges}
+.reader-dialog.reader-with-outline.reader-wide{--reader-prose-width:900px}
+.reader-with-outline [hidden]{display:none!important}
+.reader-dialog.reader-with-outline .reader-layout{display:block;padding:0;width:100%;max-width:none;margin:0}
+.reader-with-outline #reader-content{min-width:0}
+.reader-with-outline #reader-title,.reader-with-outline .prose h2,.reader-with-outline .prose h3{scroll-margin-top:calc(var(--reader-toolbar-height) + 24px)}
+.reader-with-outline .reader-layout .reader-paper{width:100%;max-width:960px;margin:0 auto;padding:28px 80px 72px;box-shadow:none}
+.reader-with-outline .reader-layout .reader-paper.wide{max-width:1100px;padding-left:100px;padding-right:100px}
+.reader-dialog.reader-with-outline .reading-toolbar,.reader-dialog.reader-with-outline.reader-scrolled .reading-toolbar{height:var(--reader-toolbar-height);gap:16px;z-index:12;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+.reader-with-outline .reader-brand .brand-logo{width:92px}
+.reader-dialog.reader-with-outline .settings-panel{top:calc(var(--reader-toolbar-height) + 12px)}
+.reader-dialog.reader-with-outline .reading-tools .save-button.compact{width:44px;height:44px;padding:0;border-radius:6px}
+.reader-dialog.reader-with-outline .reading-progress{position:fixed;inset:0 0 auto;width:100%;height:3px;z-index:20;background:var(--line);pointer-events:none}
+.reader-with-outline .reading-progress i{height:100%;transition:width .12s linear}
+.reader-with-outline .current-reading-title{display:none}
+.reader-with-outline .reading-tools{grid-column:3;grid-row:1;justify-self:end}
+.reader-with-outline .reading-actions{display:flex;align-items:center;gap:12px;grid-column:1;grid-row:1;justify-self:start;min-width:0}
+.reader-dialog.reader-with-outline .back-button{min-height:44px;padding:8px;font:400 14px/1.5 var(--sans)}
+.reader-with-outline .toc-restore{position:fixed;left:max(24px,calc((100% - 1440px)/2 + 24px));top:calc(var(--reader-toolbar-height) + 28px);z-index:11;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;font:500 13px/1.5 var(--reader-outline-family);color:var(--muted);background:var(--surface);white-space:nowrap;box-shadow:0 2px 8px #292a2808}
+.reader-with-outline .toc-restore svg,.reader-with-outline .outline-dismiss svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.reader-with-outline .toc-restore:hover{color:var(--accent);background:var(--media,#eef2f8)}
+.reader-with-outline .toc-restore[aria-expanded=true]{color:var(--accent);background:var(--reason-bg,#eaf0f9);border-color:var(--line,#d9e1eb)}
+.reader-with-outline .reader-layout .toc-panel{position:fixed;display:flex;flex-direction:column;right:auto;z-index:11;margin:0;max-width:none;max-height:none;overflow:hidden;border:0;border-radius:0;box-shadow:none;background:var(--surface,#fff)}
+.reader-with-outline.outline-docked .reader-layout .toc-panel{left:max(24px,calc((100% - 1440px)/2 + 24px));top:calc(var(--reader-toolbar-height) + 28px);bottom:auto;width:min(256px,calc((100% - var(--reader-prose-width))/2 - 48px));max-height:calc(100dvh - var(--reader-toolbar-height) - 56px);padding:0 8px 0 0}
+.reader-with-outline .outline-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 0 10px;margin-bottom:12px;border-bottom:1px solid var(--line);flex:none}
+.reader-with-outline .outline-heading>div{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 10px;min-width:0}
+.reader-with-outline .outline-heading h2{font:600 15px/1.5 var(--reader-outline-family);letter-spacing:.01em;font-synthesis:none;color:var(--ink);margin:0}
+.reader-with-outline .outline-heading p{font:500 11.5px/1.5 var(--reader-outline-family);color:var(--muted);margin:0}
+.reader-with-outline .outline-dismiss{display:grid;place-items:center;flex:none;width:36px;height:36px;padding:0;border-radius:6px;color:var(--muted)}
+.reader-with-outline .outline-dismiss:hover{color:var(--accent);background:var(--media,#eef2f8)}
+.reader-with-outline .toc-panel nav{position:relative;flex:0 1 auto;min-height:0;max-height:none;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding:0 4px 4px 0}
+.reader-with-outline .toc-panel ol{list-style:none;margin:0;padding:0}
+.reader-with-outline .toc-panel .outline-chapters{border:0;padding:0;margin:0}
+.reader-with-outline .toc-panel .outline-chapter{margin:3px 0 0;padding:0}
+.reader-with-outline .outline-chapter-heading{display:flex;align-items:flex-start}
+.reader-with-outline .toc-panel .outline-chapter-heading>[data-jump]{flex:1;min-width:0}
+.reader-with-outline .toc-panel .outline-disclosure{display:grid;place-items:center;width:28px;min-width:28px;min-height:36px;padding:0;color:var(--muted)}
+.reader-with-outline .outline-disclosure svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.reader-with-outline .outline-disclosure[aria-expanded=true] svg{transform:rotate(180deg)}
+.reader-with-outline .toc-panel nav button{display:block;width:100%;min-height:44px;margin:0;padding:10px 10px;text-align:left;white-space:normal;overflow-wrap:anywhere;font:400 14px/1.7 var(--sans);color:var(--ink);border:0;border-radius:4px;background:none}
+.reader-with-outline .toc-panel nav [data-jump]:where(:not(.outline-start)){display:grid;grid-template-columns:max-content minmax(0,1fr);column-gap:6px;align-items:baseline;width:100%;min-width:0;min-height:36px;padding:7px 9px;text-align:left;white-space:normal;overflow-wrap:break-word;border:0;border-radius:6px;background:none;color:var(--ink);font:600 14px/1.45 var(--reader-outline-family);letter-spacing:0;font-synthesis:none}
+.reader-with-outline .toc-panel .outline-chapter:first-child{margin-top:0}
+.reader-with-outline .toc-panel .toc-number{grid-column:1;font-family:inherit;line-height:inherit;font-size:inherit;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.reader-with-outline .toc-panel .toc-label{grid-column:2;min-width:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;text-wrap:wrap}
+.reader-with-outline .toc-panel nav [data-jump].is-unindexed{grid-template-columns:minmax(0,1fr)}
+.reader-with-outline .toc-panel .is-unindexed .toc-number{display:none}
+.reader-with-outline .toc-panel .is-unindexed .toc-label{grid-column:1}
+.reader-with-outline .toc-panel nav .current .toc-number{color:inherit}
+.reader-with-outline .toc-panel nav .outline-start{font:500 12px/1.5 var(--reader-outline-family);color:var(--muted);min-height:36px;margin-bottom:6px;padding:7px 9px;border-radius:6px;font-synthesis:none}
+.reader-with-outline .toc-panel .outline-subchapters{padding:2px 0 4px 14px}
+.reader-dialog.reader-with-outline .toc-panel nav button.subchapter{grid-template-columns:max-content minmax(0,1fr);column-gap:6px;font-size:13px;font-weight:500;padding:6px 9px;line-height:1.45;color:var(--muted)}
+.reader-with-outline .toc-panel .contains-current>.outline-chapter-heading>[data-jump]{font-weight:600;color:var(--ink)}
+.reader-dialog.reader-with-outline .toc-panel nav button.current{font-weight:600;color:var(--ink);background:var(--reason-bg);border:0}
+.reader-with-outline .toc-panel nav button:hover{color:var(--ink);background:var(--media)}
+.reader-with-outline .outline-scrim{display:none;position:fixed;inset:var(--reader-toolbar-height) 0 0;z-index:10;background:#222e3d38;padding:0;cursor:default;border:0}
+.reader-with-outline.outline-drawer .outline-scrim:not([hidden]){display:block}
+.reader-with-outline.outline-drawer .reader-layout .toc-panel{top:var(--reader-toolbar-height);left:0;bottom:0;width:min(300px,calc(100% - 56px));height:calc(100dvh - var(--reader-toolbar-height));padding:28px 20px 24px 24px;border-right:1px solid var(--line)}
+.reader-with-outline.outline-drawer:not(.toc-minimized){overflow-y:hidden}
+.reader-with-outline .toc-panel button:focus-visible,.reader-with-outline .toc-restore:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+@media(prefers-reduced-motion:reduce){.reader-with-outline .reading-progress i{transition:none}}
+.reduce-motion .reader-with-outline .reading-progress i{transition:none}
+@media(max-width:899px){
+  .reader-with-outline .reader-layout .reader-paper{max-width:864px;padding:28px 32px 60px}
+  .reader-with-outline .reader-layout .reader-paper.wide{max-width:948px;padding-left:24px;padding-right:24px}
+}
+@media(max-width:580px){
+  .reader-dialog.reader-with-outline .reading-toolbar,.reader-dialog.reader-with-outline.reader-scrolled .reading-toolbar{grid-template-columns:minmax(0,1fr) auto;gap:10px}
+  .reader-with-outline .reading-tools{grid-column:2}
+  .reader-with-outline .reading-actions{gap:4px}
+  .reader-with-outline .reader-back-label{display:none}
+  .reader-dialog.reader-with-outline .back-button{justify-content:center;width:44px;padding:8px}
+  .reader-with-outline .reader-layout .reader-paper{padding:20px 22px 45px}
+  .reader-with-outline .reader-layout .reader-paper.wide{padding-left:18px;padding-right:18px}
+  .reader-with-outline.outline-drawer .reader-layout .toc-panel{padding-top:24px}
+}
+@media(max-width:360px){.reader-with-outline .reader-layout .reader-paper{padding-left:18px;padding-right:18px}}
+
+@media(pointer:coarse),(max-width:580px){.reader-with-outline .toc-panel nav [data-jump]:not(.outline-start),.reader-with-outline .toc-panel nav .outline-start,.reader-with-outline .toc-panel .outline-disclosure,.reader-with-outline .outline-dismiss{min-height:44px}.reader-with-outline .outline-dismiss{width:44px}}
+
+/* A narrow viewport keeps the restore control inside the page's left gutter. */
+.reader-with-outline.outline-drawer .toc-restore{left:0;width:24px;min-height:52px;padding:14px 2px;gap:0;border-left:0;border-radius:0 7px 7px 0}
+.reader-with-outline.outline-drawer .toc-restore span{display:none}
+.reader-with-outline.outline-drawer .toc-restore svg{width:18px;height:18px}
+

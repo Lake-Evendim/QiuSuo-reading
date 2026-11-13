@@ -1,0 +1,82 @@
+{
+  "viewports": [
+    {
+      "briefs": [
+        {
+          "found": true,
+          "id": "datawhale-higgs-20261109",
+          "points": true,
+          "reason": true
+        },
+        {
+          "found": true,
+          "id": "mlnlp-wsp-20261109",
+          "points": true,
+          "reason": true
+        },
+        {
+          "found": true,
+          "id": "mlnlp-rsi-20261109",
+          "points": true,
+          "reason": true
+        },
+        {
+          "found": true,
+          "id": "mlnlp-ppt-20261109",
+          "points": true,
+          "reason": true
+        },
+        {
+          "found": true,
+          "id": "latepost-huaxi-20261109",
+          "points": true,
+          "reason": true
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "width": 1280
+    },
+    {
+      "briefs": [
+        {
+          "found": true,
+          "id": "datawhale-higgs-20261109",
+          "points": true,
+          "reason": true
+        },
+        {
+          "found": true,
+          "id": "mlnlp-wsp-20261109",
+          "points": true,
+          "reason": true
+        },
+        {
+          "found": true,
+          "id": "mlnlp-rsi-20261109",
+          "points": true,
+          "reason": true
+        },
+        {
+          "found": true,
+          "id": "mlnlp-ppt-20261109",
+          "points": true,
+          "reason": true
+        },
+        {
+          "found": true,
+          "id": "latepost-huaxi-20261109",
+          "points": true,
+          "reason": true
+        }
+      ],
+      "fontStatus": "loaded",
+      "overflow": false,
+      "width": 390
+    }
+  ],
+  "reader18px": true,
+  "defaultOutlineOpened": true,
+  "readerOpenedAndReturned": true,
+  "consoleIssues": []
+}

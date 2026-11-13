@@ -1,0 +1,58 @@
+/* Low-key comparison controls occupy the existing heading area. */
+.polish-heading-side{margin-left:auto;position:relative}
+.polish-comparison{display:flex;align-items:center;gap:13px;font:400 11px/1.5 "Microsoft YaHei",sans-serif;color:#777971;position:absolute;top:100%;right:0;justify-content:flex-end}
+.polish-comparison>span{margin-right:2px;color:#777971}
+.polish-comparison button,.polish-comparison a{display:inline-flex;align-items:center;min-height:26px;padding:0;font:inherit;white-space:nowrap}
+.polish-comparison button[aria-pressed=true]{color:#292a28;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.polish-comparison button:hover,.polish-comparison a:hover{color:#292a28}
+
+/* Keep the original white canvas, solid/tint semantics, typefaces and category bars. */
+html[data-channel-polish=polish] .channels-layout .channel-group-content{grid-template-columns:minmax(0,1.28fr) minmax(0,1fr);gap:32px}
+html[data-channel-polish=polish] .channel-source-name h3{overflow-wrap:normal;word-break:normal;text-wrap:pretty}
+html[data-channel-polish=polish] .channel-latin{white-space:nowrap}
+html[data-channel-polish=polish] .channel-source-detail{padding:10px 16px 14px;min-height:72px}
+html[data-channel-polish=polish] .channel-source-detail p{line-height:1.8}
+html[data-channel-polish=polish] .channels-layout .channel-source-link.is-selected .channel-source-name{outline-width:1.5px;outline-offset:2px}
+html[data-channel-polish=polish] .channel-source-link:hover h3{text-decoration:none}
+html[data-channel-polish=polish] .channel-source-link:hover .channel-source-name{box-shadow:inset 0 0 0 1px var(--channel-color)}
+html[data-channel-polish=polish] .channel-source-link.is-selected:hover .channel-source-name{box-shadow:none}
+html[data-channel-polish=polish] .channels-layout .channel-shelf{padding-left:21px;padding-right:21px}
+html[data-channel-polish=polish] .channels-layout .channel-reading.with-image{grid-template-columns:minmax(0,1fr) 88px;column-gap:16px}
+html[data-channel-polish=polish] .channel-reading h4{line-height:1.55;margin-top:8px;margin-bottom:9px}
+html[data-channel-polish=polish] .channel-meta time{font-variant-numeric:tabular-nums}
+
+/* Shared row tracks align names and descriptions without clipping source names. */
+@supports(grid-template-rows:subgrid){
+ html[data-channel-polish=polish] .channels-layout .channel-source-list{row-gap:0}
+ html[data-channel-polish=polish] .channel-source{display:grid;grid-row:span 2;grid-template-rows:subgrid;margin-bottom:17px}
+ html[data-channel-polish=polish] .channels-layout .channel-source-link{display:grid;grid-row:span 2;grid-template-rows:subgrid;height:auto}
+ html[data-channel-polish=polish] .channel-source-name,html[data-channel-polish=polish] .channel-source-detail{align-self:stretch}
+}
+@media(max-width:1100px){
+ html[data-channel-polish=polish] .channels-layout .channel-group-content{grid-template-columns:minmax(0,1.23fr) minmax(0,1fr);gap:24px}
+ html[data-channel-polish=polish] .channels-layout .channel-reading.with-image{grid-template-columns:1fr}
+}
+@media(max-width:820px){
+ .polish-heading-side{margin:0}
+ .polish-comparison{position:static;justify-content:flex-start;margin-top:3px}
+ html[data-channel-polish=polish] .channels-layout .channel-group-content{display:block}
+ html[data-channel-polish=polish] .channels-layout .channel-shelf{padding-left:20px;padding-right:20px}
+}
+@media(max-width:580px){
+ .polish-comparison{gap:12px;font-size:10px;margin-top:2px}
+ .polish-comparison button,.polish-comparison a{min-height:30px}
+ html[data-channel-polish=polish] .channel-source-name h3{font-size:18px;line-height:1.45}
+ html[data-channel-polish=polish] .channel-latin-long{font-size:.89em}
+ html[data-channel-polish=polish] .channels-layout .channel-source-name{padding:10px 11px;gap:6px}
+ html[data-channel-polish=polish] .channel-source-detail{padding:9px 11px 12px;min-height:69px}
+ html[data-channel-polish=polish] .channel-source-detail p{font-size:11px;line-height:1.85}
+ html[data-channel-polish=polish] .channel-source{margin-bottom:13px}
+ html[data-channel-polish=polish] .channels-layout .channel-shelf{padding-left:18px;padding-right:18px}
+ html[data-channel-polish=polish] .channels-layout .channel-reading.with-image{grid-template-columns:minmax(0,1fr) 68px;column-gap:10px}
+}
+@media(max-width:350px){
+ html[data-channel-polish=polish] .channel-source-name h3{font-size:17px}
+ html[data-channel-polish=polish] .channels-layout .channel-source-name{padding:10px;gap:4px}
+ html[data-channel-polish=polish] .channel-latin-long{font-size:.79em}
+ html[data-channel-polish=polish] .channel-source-detail{padding:9px 10px 12px}
+}

@@ -1,0 +1,18 @@
+/* Pretext computes a width; native DOM still owns text, selection and flow. */
+html[data-scheme=journal] .title-token{display:inline-block;white-space:nowrap}
+html[data-scheme=journal] .title-token-breakable{display:inline;white-space:normal;overflow-wrap:break-word}
+html[data-scheme=journal] .brief-article h2,
+html[data-scheme=journal] #reader-title{
+  min-inline-size:0;
+  align-self:start;
+  max-inline-size:var(--title-measure,100%);
+  text-wrap:wrap;
+  overflow-wrap:break-word;
+  word-break:normal;
+  line-break:auto;
+}
+@media(min-width:1051px){
+  html[data-scheme=journal] body:not(.site-focus) .journal-edition .article-content{
+    grid-template-columns:minmax(0,var(--headline-share,.852fr)) minmax(0,1fr);
+  }
+}

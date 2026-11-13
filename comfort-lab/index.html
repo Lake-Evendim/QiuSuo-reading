@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN" data-scheme="journal" data-palette="ink">
+<head>
+  <base href="../prototype/">
+  <script src="../comfort-lab/comfort.js?v=1"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>求索 | 大模型工程与研究的阅读空间</title>
+  <link rel="icon" type="image/svg+xml" href="assets/branding/qiusuo-mark.svg?v=1">
+  <link rel="preload" href="assets/fonts/reading-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/reading-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="journal.css?v=6">
+  <link rel="stylesheet" href="typesetting.css?v=3">
+  <link rel="stylesheet" href="edition.css?v=21">
+  <link rel="stylesheet" href="brief-actions.css?v=5">
+  <link rel="stylesheet" href="reader-outline.css?v=13">
+  <link rel="stylesheet" href="source-type.css?v=3">
+  <link rel="stylesheet" href="brand.css?v=4">
+  <link rel="stylesheet" href="ink-theme.css?v=5">
+  <link rel="stylesheet" href="channels.css?v=4">
+  <link rel="stylesheet" href="home-media.css?v=6">
+  <link rel="stylesheet" href="publisher-strata.css?v=3">
+  <script src="data.js?v=20261109-3" defer></script>
+  <script src="source-profiles.js?v=8" defer></script>
+  <script src="edition.js?v=20261109-6" defer></script>
+  <script src="channels.js?v=3" defer></script>
+  <script src="../comfort-lab/preview-experience.js?v=1" defer></script>
+  <script src="../comfort-lab/preview-app.js?v=1" defer></script>
+  <script src="publisher-strata.js?v=3" defer></script>
+  <script src="typesetting.js?v=4" type="module"></script>
+  <link rel="stylesheet" href="../comfort-lab/comfort.css?v=1">
+</head>
+<body class="channels-layout">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="journal-masthead" aria-label="求索阅读导航">
+    <div class="masthead-inner">
+      <a class="brand" href="#home" aria-label="求索阅读空间首页"><picture class="brand-picture"><source media="(max-width: 540px)" srcset="assets/branding/qiusuo-compact.svg?v=1"><img class="brand-logo" src="assets/branding/qiusuo-header.svg?v=1" width="560" height="174" alt="求索"></picture></a>
+      <div class="journal-nav-shell"><nav class="journal-nav" aria-label="主导航" data-section="home"><a href="#home" data-nav="home"><span class="nav-label">精选</span></a><a href="#channels" data-nav="channels"><span class="nav-label">公众号</span></a><a href="#saved" data-nav="saved"><span class="nav-label">稍后读<span id="saved-count"></span></span></a><i class="nav-indicator" aria-hidden="true"></i></nav></div>
+      <div class="masthead-tools" role="group" aria-label="阅读工具">
+        <button id="search-open" class="masthead-tool" aria-label="搜索文章与公众号" title="搜索文章与公众号（Ctrl K）"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span>搜索</span></button>
+        <button id="focus-toggle" class="masthead-tool" aria-label="专注阅读" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4"/></svg><span>专注阅读</span></button>
+        <button class="masthead-tool" id="update-help" aria-label="更新简报说明" title="更新简报说明"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.22 14.55a7.65 7.65 0 1 1-1.8-7.96l3.93 3.71"/><path d="M21.35 5.2v5.1h-5.1"/></svg><span>更新</span></button>
+        <details class="masthead-overflow" id="masthead-overflow"><summary aria-label="更多阅读工具" title="更多阅读工具"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></summary><div class="masthead-menu" aria-label="更多阅读工具"><button data-masthead-action="search">搜索阅读库</button><button data-masthead-action="focus" aria-pressed="false">专注阅读</button><button data-masthead-action="update">更新简报</button></div></details>
+      </div>
+    </div>
+  </header>
+<section class="comfort-preview-bar" aria-label="阅读底色预览"><div class="comfort-preview-options"><strong>阅读底色预览</strong><select id="comfort-theme-site" data-comfort-picker aria-label="切换阅读底色"></select></div><nav class="comfort-preview-links" aria-label="预览页面"><a href="#channels" data-comfort-route="channels">公众号页</a><a href="#article/autoresearch/body" data-comfort-route="reader">正文页</a><a href="../prototype/#channels">返回正式阅读台</a></nav></section>
+  <main id="main" tabindex="-1"></main>
+  <dialog id="reader-dialog" class="reader-dialog reader-with-outline" aria-labelledby="reader-title">
+    <div class="reading-progress" aria-hidden="true"><i id="reading-progress-fill"></i></div>
+    <div class="reading-toolbar">
+      <div class="reading-actions"><button id="close-reader" class="back-button" aria-label="返回简报"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span class="reader-back-label">返回简报</span></button></div>
+      <span class="reader-brand" aria-hidden="true"><img class="brand-logo" src="assets/branding/qiusuo-header.svg?v=1" width="560" height="174" alt=""></span>
+      <span id="current-reading-title" class="current-reading-title" aria-hidden="true"></span>
+      <div class="reading-tools">
+        <button id="settings-toggle" aria-controls="settings-panel" aria-expanded="false">排版</button>
+        <span id="reader-save"></span>
+      </div>
+    </div>
+    <aside id="settings-panel" class="reader-panel settings-panel" aria-label="阅读排版" hidden>
+      <div class="panel-heading"><h2>阅读排版</h2><button data-close-panel="settings-panel" aria-label="收起阅读排版">×</button></div>
+      <div class="setting-row"><span>字号</span><div class="stepper"><button data-size="-1" aria-label="减小正文字号">A−</button><output id="font-size-label">20</output><button data-size="1" aria-label="增大正文字号">A+</button></div></div>
+      <div class="setting-row"><span>字体</span><div class="segmented"><button data-font="serif" aria-pressed="true">宋体</button><button data-font="sans" aria-pressed="false">黑体</button></div></div>
+      <div class="setting-row"><span>行宽</span><div class="segmented"><button data-width="comfortable" aria-pressed="true">舒适</button><button data-width="wide" aria-pressed="false">宽版</button></div></div>
+      <div class="setting-row"><span>公众号装饰图</span><button id="decoration-toggle" class="decoration-toggle" aria-label="收起公众号装饰图" aria-pressed="true">已收起</button></div>
+      <div class="setting-row"><span>动态效果</span><button id="motion-toggle" class="motion-toggle" aria-pressed="false">减少动效</button></div>
+      <button id="reset-reading" class="reset-reading">恢复默认排版</button>
+    </aside>
+    <div class="reader-layout">
+      <button id="toc-toggle" class="toc-restore reader-side-restore" aria-controls="toc-panel" aria-expanded="false" aria-label="展开文章目录" title="展开文章目录" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M9 4v16M12 9h6M12 13h6M12 17h4"/></svg><span>目录</span></button>
+      <aside id="toc-panel" class="reader-panel toc-panel" aria-labelledby="outline-title" hidden>
+        <div class="outline-heading"><div><h2 id="outline-title">文章目录</h2><p id="outline-summary"></p></div><button class="outline-dismiss" data-minimize-outline aria-label="收起文章目录" title="收起文章目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6M20 4v16"/></svg></button></div>
+        <nav id="reader-toc" aria-label="原文章节导航"></nav>
+
+      </aside>
+      <div id="reader-content"></div>
+    </div>
+    <button class="outline-scrim" data-minimize-outline aria-label="收起目录并返回正文" tabindex="-1" hidden></button>
+  </dialog>
+  <dialog id="update-dialog" class="update-dialog" aria-labelledby="update-title">
+    <button class="dialog-close" id="close-dialog" aria-label="关闭更新说明">×</button>
+    <h2 id="update-title">更新今日简报</h2>
+    <p id="update-description">在项目会话中发送下方口令。完成采集与整理后，这里会展示新的内容。</p>
+    <div class="prompt-box" id="update-prompt">更新今日简报</div>
+    <button class="primary-button" id="copy-prompt">复制口令</button>
+    <p class="dialog-footnote">文章按已核验批次更新，历史文章与稍后读持续保留。</p>
+  </dialog>
+  <div role="status" id="toast" class="toast"></div>
+  <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><header><h2 id="search-title">搜索阅读库</h2><button id="search-close" aria-label="关闭搜索">×</button></header><label class="library-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="library-query" type="search" placeholder="文章、公众号或技术方向" aria-label="搜索文章、公众号或技术方向" autocomplete="off"></label><p id="search-status" class="search-status" role="status"></p><div id="library-results" class="library-results"></div></dialog>
+  <dialog id="image-dialog" class="image-dialog" aria-labelledby="image-title"><div class="image-toolbar"><h2 id="image-title">原文图表</h2><div><button id="image-fit" aria-pressed="false">原始尺寸</button><a id="image-original" target="_blank" rel="noopener noreferrer">打开原图</a><button id="image-close" aria-label="关闭图表">×</button></div></div><div id="image-stage" class="image-stage" tabindex="0" aria-label="图表查看区域"><img id="image-full" alt=""></div><p id="image-caption"></p></dialog>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234 240" width="234" height="240" color="#14222d" role="img" aria-labelledby="title"><title id="title">求索</title><defs><symbol id="qp-mark" viewBox="0 0 220 180">
+      <path d="m14 83 92-72 92 72h-34l-58-45-58 45Z" fill="currentColor"/>
+      <path d="M14 96h184l-92 72Z" fill="currentColor"/>
+    </symbol><symbol id="qp-cn" viewBox="0 0 234 102">
+      <g fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="miter" stroke-linecap="square">
+        <path d="M7 22h218M48 6v82q0 7-8 7h-9M15 38l14 13M8 81l28-23M78 38 64 51M58 49q10 22 29 35M73 6l5 5"/>
+        <path d="M176 6v33M139 47V38h76v9M176 48l-15 14h20M190 54l-30 24h40l-6-10M179 80v14h-10M157 87l-14 12M198 87l15 12"/>
+      </g>
+    </symbol></defs><use href="#qp-mark" x="59" y="4" width="120" height="98"/><use href="#qp-cn" x="0" y="123" width="234" height="102"/></svg>

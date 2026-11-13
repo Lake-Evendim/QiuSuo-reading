@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>见微 — 设计方案预览</title>
+  <link rel="preload" href="../prototype/assets/fonts/reading-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../prototype/assets/fonts/reading-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../prototype/styles.css?v=9">
+  <script src="../prototype/data.js?v=12" defer></script>
+  <script src="../prototype/source-profiles.js?v=8" defer></script>
+  <link rel="stylesheet" href="lab.css?v=1">
+  <script src="lab.js?v=1" defer></script>
+  <script src="../prototype/app.js?v=20261110-6" defer></script>
+</head>
+<body>
+  <aside class="lab-toolbar" aria-label="设计方案预览"><a class="lab-index" href="./">方案总览</a><div class="lab-switches" role="group" aria-label="切换设计方案"><button data-scheme="folio" aria-pressed="true"><span>A</span> 留白书房</button><button data-scheme="journal" aria-pressed="false"><span>B</span> 视野期刊</button><button data-scheme="studio" aria-pressed="false"><span>C</span> 理性工作台</button></div><span id="scheme-caption"></span><button id="collapse-lab" aria-label="收起方案栏">收起</button></aside><button id="show-lab" class="show-lab" aria-label="展开设计方案栏">设计方案</button>
+  <a class="skip-link" href="#main">跳到简报</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="见微首页"><strong>见微</strong><span>公众号阅读台</span></a>
+    <nav aria-label="主导航"><a href="#home" data-nav="home">精选</a><a href="#channels" data-nav="channels">公众号</a><a href="#saved" data-nav="saved">稍后读 <span id="saved-count"></span></a></nav>
+    <div class="site-tools">
+      <button id="focus-toggle" class="quiet-button" aria-label="专注阅读" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4"/></svg><span>专注阅读</span></button>
+      <button class="quiet-button update-trigger" id="update-help">更新</button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <dialog id="reader-dialog" class="reader-dialog" aria-labelledby="reader-title">
+    <div class="reading-progress" aria-hidden="true"><i id="reading-progress-fill"></i></div>
+    <div class="reading-toolbar">
+      <button id="close-reader" class="back-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>返回简报</button>
+      <span id="current-reading-title" class="current-reading-title" aria-hidden="true"></span>
+      <div class="reading-tools">
+        <button id="toc-toggle" aria-controls="toc-panel" aria-expanded="false">目录</button>
+        <button id="settings-toggle" aria-controls="settings-panel" aria-expanded="false">排版</button>
+        <span id="reader-save"></span>
+      </div>
+    </div>
+    <aside id="toc-panel" class="reader-panel toc-panel" aria-label="原文章节" hidden>
+      <div class="panel-heading"><h2>文章目录</h2><button data-close-panel="toc-panel" aria-label="收起文章目录">×</button></div>
+      <nav id="reader-toc" aria-label="原文章节导航"></nav>
+    </aside>
+    <aside id="settings-panel" class="reader-panel settings-panel" aria-label="阅读排版" hidden>
+      <div class="panel-heading"><h2>阅读排版</h2><button data-close-panel="settings-panel" aria-label="收起阅读排版">×</button></div>
+      <div class="setting-row"><span>字号</span><div class="stepper"><button data-size="-1" aria-label="减小正文字号">A−</button><output id="font-size-label">18</output><button data-size="1" aria-label="增大正文字号">A+</button></div></div>
+      <div class="setting-row"><span>字体</span><div class="segmented"><button data-font="serif" aria-pressed="true">宋体</button><button data-font="sans" aria-pressed="false">黑体</button></div></div>
+      <div class="setting-row"><span>行宽</span><div class="segmented"><button data-width="comfortable" aria-pressed="true">舒适</button><button data-width="wide" aria-pressed="false">宽版</button></div></div>
+      <button id="reset-reading" class="reset-reading">恢复默认排版</button>
+    </aside>
+    <div id="reader-content"></div>
+  </dialog>
+  <dialog id="update-dialog" class="update-dialog" aria-labelledby="update-title">
+    <button class="dialog-close" id="close-dialog" aria-label="关闭更新说明">×</button>
+    <h2 id="update-title">更新今日简报</h2>
+    <p id="update-description">在项目会话中发送下方口令。完成采集与整理后，这里会展示新的内容。</p>
+    <div class="prompt-box" id="update-prompt">更新今日简报</div>
+    <button class="primary-button" id="copy-prompt">复制口令</button>
+    <p class="dialog-footnote">当前为四篇文章的阅读样例，尚未建立完整的一周阅读库。</p>
+  </dialog>
+  <div role="status" id="toast" class="toast"></div>
+</body>
+</html>

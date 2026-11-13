@@ -1,0 +1,27 @@
+/* Color proposals only. No layout, type scale or source-image filters are changed here. */
+html[data-palette] {--surface:var(--page);color-scheme:light}
+html[data-palette] body,
+html[data-palette] :is(.reader-dialog,.reader-paper) {background:var(--page);color:var(--ink)}
+html[data-palette] :is(.journal-masthead,.reading-toolbar,.reader-scrolled .reading-toolbar) {background:var(--chrome);border-color:var(--line)}
+html[data-palette] :is(.application,.application strong) {color:var(--application-ink)}
+html[data-palette] .application strong {color:var(--ink)}
+html[data-palette] .read-button {background:var(--accent);color:#fff}
+html[data-palette] .read-button:hover {background:var(--accent-hover)}
+html[data-palette] .primary-button {background:var(--accent);color:#fff}
+html[data-palette] .outlined-button {border-color:var(--edge-strong)}
+html[data-palette] :is(.outlined-button:hover,.source-entry:hover,.save-button:hover,.decoration-toggle,.stepper,.segmented,.image-stage,.code-block,.source-search) {background:var(--bg)}
+html[data-palette] :is(.source-controls,.source-entry,.source-search,.setting-row,.reading-toolbar,.reader-panel,.code-block,.code-label,.image-toolbar,.search-dialog>footer,.body-end,.prose td,.prose th) {border-color:var(--line)}
+html[data-palette] .feature-media {background:var(--bg)}
+html[data-palette] :is(.reader-panel,.search-dialog,.update-dialog,.image-dialog,.masthead-menu,.skip-link) {background:var(--raised);color:var(--ink);border-color:var(--line)}
+html[data-palette] :is(.source-filters button[aria-pressed=true],.segmented button[aria-pressed=true],.toc-panel nav button.current,.search-result:hover,.search-result:focus-visible,.masthead-menu button:hover,.masthead-menu button:focus-visible,.motion-toggle,.code-copy:hover,.prompt-box) {background:var(--accent-soft);color:var(--accent)}
+html[data-palette] .save-button.saved svg {fill:var(--accent-soft)}
+html[data-palette] .reading-progress i {background:var(--accent)}
+html[data-palette] :is(.back-button,.image-toolbar button,.image-toolbar a,.panel-heading button,.source-breadcrumb) {color:var(--muted)}
+html[data-palette] :is(.library-search,.masthead-menu) {border-color:var(--edge-strong)}
+html[data-palette] .library-search:focus-within {border-color:var(--accent)}
+html[data-palette] :is(.prose pre,.prose h2,.prose h3,.prose th) {color:var(--ink)}
+html[data-palette] .prose th {background:var(--bg)}
+html[data-palette] .prose li::marker {color:var(--muted)}
+html[data-palette] .toast {background:var(--ink);color:var(--raised)}
+html[data-palette] dialog::backdrop {background:var(--veil)}
+html[data-palette] ::selection {background:var(--accent-soft);color:var(--ink)}
